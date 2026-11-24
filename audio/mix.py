@@ -1,4 +1,4 @@
-# Sonido de las escenas 2-6, todo sintetizado (numpy): música (zumbido + pulso) por secciones, efectos colocados
+# Sonido de las escenas 2-7, todo sintetizado (numpy): música (zumbido + pulso) por secciones, efectos colocados
 # sobre las mismas palabras de la voz que usa la imagen, y mezcla con la música atenuada bajo la voz.
 # uso: python audio/mix.py escena2 [escena3 ...]  ->  audio/<escena>_mix.wav (48 kHz estéreo)
 import json, math, os, sys, unicodedata, wave
@@ -95,11 +95,17 @@ def s2(T):
             + [("pop", a + 0.1 + 0.2 * i, 0.4, (300 + 40 * i,)) for i in range(7)] + [("thump", fe + 0.8 * i, 0.6) for i in range(1, 3)]
             + [("pop", x, 0.6) for x in (inv, inv + 0.55, inv + 1.0)] + [("pop", me + i / 9, 0.3, (420 + 30 * i,)) for i in range(7)])
 def s3(T):
-    ma, ra, sc, us, to, wa, cy, tu, bi = T("mastografia"), T("rayos"), T("para") - 0.05, T("y") - 0.1, T("ultrasonido"), T("ondas"), T("quiste"), T("tumor"), T("biopsia")
-    return ([("whoosh", ma - 0.1, 0.5), ("thump", ma + 1.7, 0.8), ("whoosh", sc - 0.1, 0.5), ("bell", T("anomalias"), 0.6, (1174.66,)), ("whoosh", us - 0.1, 0.6), ("thump", to, 0.7),
-             ("bell", cy + 0.3, 0.6, (1318.5,)), ("boom", tu + 0.2, 0.8), ("beep", bi, 0.4, (880, 0.2))]
-            + [x for i in range(3) for x in (("beep", ra + 0.4 * i, 0.5, (1760, 0.12)), ("thump", ra + 0.4 * i, 0.7, (80, 0.2)))]
-            + [("bell", wa + 0.42 * i, 0.22, (660 * 2 ** ((i % 6) / 12), 0.7)) for i in range(18)])
+    c, day, g, bar = T("fallecieron"), T("promedio"), T("decada"), T("sesenta")
+    return ([("tick", c + 0.06 * i, 0.32) for i in range(32)]
+            + [("thump", day + 0.28 * i, 0.42, (46, 0.3, 0.62)) for i in range(8)]
+            + [("bell", g, 0.32, (349.23, 2.6)), ("bell", bar, 0.28, (311.13, 2.2))])
+def s4rad(T):
+    ra, dna, co, de, us, wa, cy, tu = T("rayos"), T("alteraciones"), T("compresion"), T("densas"), T("ultrasonido"), T("ondas"), T("quiste"), T("tumor")
+    return ([("whoosh", T("mastografia") - 0.1, 0.45), ("thump", co, 0.95, (68, 0.28, 0.4)), ("glitch", dna, 0.65), ("boom", dna + 0.55, 0.4),
+             ("whoosh", de - 0.1, 0.4), ("whoosh", us - 0.15, 0.55), ("bell", cy, 0.4, (880, 1.3)), ("boom", tu, 0.5)]
+            + [("beep", ra + 0.4 * i, 0.45, (1320, 0.1)) for i in range(3)]
+            + [("thump", ra + 0.4 * i, 0.55, (90, 0.18)) for i in range(3)]
+            + [("bell", wa + 0.4 * i, 0.16, (494 + 30 * (i % 5), 0.5)) for i in range(16)])
 def s4(T):
     ai, co, fi, la, bio, oro, anc, vib, hit, slow, rev, na = T("primero"), T("analizando"), T("identificando"), T("aun") - 0.1, T("biosensor"), T("oro"), T("anclar"), T("vibrar"), T("choque"), T("frena"), T("revelando"), T("precision")
     end = T("nanometrica") + 2.0
@@ -114,16 +120,16 @@ def s5(T):
              ("bell", he + 0.1, 0.5, (987.77,)), ("bell", tp + 0.1, 0.5, (1318.5,)), ("whoosh", ab - 0.1, 0.5), ("thump", an, 1.0), ("whoosh", pe, 0.6, (1.2, 200, 1500)), ("glitch", so + 0.6, 0.7), ("boom", de + 0.25, 1.1),
              ("bell", mi + 0.9, 0.6, (1174.66,)), ("bell", mi + 1.2, 0.5, (1479.98,))]
             + [("tick", q + 0.11 * i, 0.3) for i in range(24)] + [("pop", an + 0.28 * i, 0.5, (500 + 40 * i,)) for i in range(1, 5)] + [("bell", li + 0.3 * i, 0.3, (1318.5 * 2 ** (i / 12), 0.8)) for i in range(5)])
-def s6(T):
-    return ([("bell", T("fisica"), 0.5, (587.33,)), ("bell", T("acustica"), 0.5, (739.99,)), ("bell", T("inteligencia"), 0.5, (880,)), ("bell", T("biotecnologia"), 0.5, (1174.66,)), ("boom", T("trabajan") + 1.0, 0.5),
-             ("whoosh", T("la", 5) - 0.4, 0.7, (1.0, 300, 5000)), ("bell", T("detectable"), 0.5, (880,)), ("bell", T("tratable"), 0.5, (987.77,)), ("bell", T("curable"), 0.6, (1174.66,)), ("thump", T("curable") + 0.05, 0.5),
-             ("bell", T("investigacion"), 0.5, (739.99,)), ("riser", T("futuro") - 0.4, 0.35, (3.2,))] + [("bell", T("favor") + 0.25 * i, 0.5, (f, 3.0)) for i, f in enumerate((587.33, 739.99, 880, 1174.66, 1479.98))])
+def s7(T):
+    return [("thump", T("muriendo"), 0.65, (44, 0.42, 0.55)), ("bell", T("fisica"), 0.38, (523.25, 1.8)), ("bell", T("acustica"), 0.38, (659.25, 1.8)),
+            ("bell", T("biotecnologia"), 0.4, (783.99, 1.8)), ("whoosh", T("laboratorio") - 0.05, 0.35), ("thump", T("lucha"), 0.75, (40, 0.5, 0.5)), ("bell", T("abierta"), 0.4, (392, 2.8))]
 SPECS = dict(
     escena2=dict(sections=[(0, "dark"), ("viajando", "grow"), ("colonizar", "dark"), ("invasivo", "grow")], events=s2),
-    escena3=dict(sections=[(0, "calm"), ("mastografia", "data"), ("y", "calm"), ("ondas", "light")], events=s3),
-    escena4=dict(sections=[(0, "data"), ("primero", "grow"), ("identificando", "data"), ("aun", "light"), ("utilizamos", "calm"), ("vibrar", "data"), ("choque", "grow")], events=s4),
-    escena5=dict(sections=[(0, "calm"), ("quimioterapia", "dark"), (("el", 1), "light"), ("caballo", "grow"), ("rastrean", "data"), (("anticuerpo", 0), "grow"), ("destruccion", "hope")], events=s5),
-    escena6=dict(sections=[(0, "hope")], events=s6, major=True, tail=3.6),
+    escena3=dict(sections=[(0, "none"), ("hoy", "dark"), ("promedio", "dark"), ("decada", "data")], events=s3, tail=2.6),
+    escena4=dict(sections=[(0, "dark"), ("alteraciones", "grow"), ("ultrasonido", "calm"), ("ondas", "light")], events=s4rad, tail=2.4),
+    escena5=dict(sections=[(0, "data"), ("primero", "grow"), ("identificando", "data"), ("aun", "light"), ("utilizamos", "calm"), ("vibrar", "data"), ("choque", "grow")], events=s4),
+    escena6=dict(sections=[(0, "calm"), ("quimioterapia", "dark"), (("el", 1), "light"), ("caballo", "grow"), ("rastrean", "data"), (("anticuerpo", 0), "grow"), ("destruccion", "hope")], events=s5),
+    escena7=dict(sections=[(0, "dark"), ("fisica", "calm"), ("lucha", "dark")], events=s7, tail=3.2),
 )
 if __name__ == "__main__":
     for n in sys.argv[1:]: build(n, SPECS[n])

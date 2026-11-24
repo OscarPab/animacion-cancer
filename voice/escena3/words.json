@@ -1,452 +1,998 @@
 [
 {
-"w": "Nuestra",
-"who": "EMILIANO",
-"t": 1.2,
-"d": 0.338
-},
-{
-"w": "primera",
-"who": "EMILIANO",
-"t": 1.5,
+"w": "Esto",
+"who": "FERNANDO",
+"t": 1.6,
 "d": 0.3
 },
 {
-"w": "línea",
-"who": "EMILIANO",
-"t": 1.837,
-"d": 0.275
+"w": "no",
+"who": "FERNANDO",
+"t": 1.826,
+"d": 0.15
 },
 {
-"w": "de",
-"who": "EMILIANO",
-"t": 2.137,
-"d": 0.013
-},
-{
-"w": "defensa",
-"who": "EMILIANO",
-"t": 2.162,
-"d": 0.375
-},
-{
-"w": "siempre",
-"who": "EMILIANO",
-"t": 2.562,
-"d": 0.312
-},
-{
-"w": "ha",
-"who": "EMILIANO",
-"t": 2.875,
-"d": 0.062
-},
-{
-"w": "sido",
-"who": "EMILIANO",
-"t": 2.95,
-"d": 0.2
-},
-{
-"w": "la",
-"who": "EMILIANO",
-"t": 3.187,
-"d": 0.062
-},
-{
-"w": "detección",
-"who": "EMILIANO",
-"t": 3.287,
-"d": 0.438
-},
-{
-"w": "temprana",
-"who": "EMILIANO",
-"t": 3.725,
-"d": 0.487
-},
-{
-"w": "Hoy",
-"who": "EMILIANO",
-"t": 5.137,
-"d": 0.263
-},
-{
-"w": "la",
-"who": "EMILIANO",
-"t": 5.7,
-"d": 0.087
-},
-{
-"w": "mastografía",
-"who": "EMILIANO",
-"t": 5.812,
-"d": 0.575
-},
-{
-"w": "salva",
-"who": "EMILIANO",
-"t": 6.412,
-"d": 0.25
-},
-{
-"w": "millones",
-"who": "EMILIANO",
-"t": 6.687,
-"d": 0.312
-},
-{
-"w": "de",
-"who": "EMILIANO",
-"t": 7.037,
-"d": 0.075
-},
-{
-"w": "vidas",
-"who": "EMILIANO",
-"t": 7.125,
-"d": 0.425
-},
-{
-"w": "utilizando",
-"who": "EMILIANO",
-"t": 7.775,
-"d": 0.525
-},
-{
-"w": "rayos",
-"who": "EMILIANO",
-"t": 8.337,
-"d": 0.35
-},
-{
-"w": "X",
-"who": "EMILIANO",
-"t": 8.7,
-"d": 0.212
-},
-{
-"w": "de",
-"who": "EMILIANO",
-"t": 8.95,
-"d": 0.062
-},
-{
-"w": "baja",
-"who": "EMILIANO",
-"t": 9.05,
-"d": 0.188
-},
-{
-"w": "dosis",
-"who": "EMILIANO",
-"t": 9.312,
-"d": 0.237
-},
-{
-"w": "para",
-"who": "EMILIANO",
-"t": 9.612,
-"d": 0.1
-},
-{
-"w": "encontrar",
-"who": "EMILIANO",
-"t": 9.712,
-"d": 0.4
-},
-{
-"w": "anomalías",
-"who": "EMILIANO",
-"t": 10.112,
-"d": 0.55
-},
-{
-"w": "años",
-"who": "EMILIANO",
-"t": 10.662,
-"d": 0.263
-},
-{
-"w": "antes",
-"who": "EMILIANO",
-"t": 10.925,
-"d": 0.25
-},
-{
-"w": "de",
-"who": "EMILIANO",
-"t": 11.212,
-"d": 0.075
-},
-{
-"w": "que",
-"who": "EMILIANO",
-"t": 11.337,
-"d": 0.075
-},
-{
-"w": "puedan",
-"who": "EMILIANO",
-"t": 11.487,
-"d": 0.225
-},
-{
-"w": "palparse",
-"who": "EMILIANO",
-"t": 11.712,
-"d": 0.512
-},
-{
-"w": "Y",
-"who": "EMILIANO",
-"t": 12.931,
-"d": 0.125
-},
-{
-"w": "cuando",
-"who": "EMILIANO",
-"t": 13.007,
-"d": 0.2
-},
-{
-"w": "hay",
-"who": "EMILIANO",
-"t": 13.207,
-"d": 0.075
-},
-{
-"w": "dudas",
-"who": "EMILIANO",
-"t": 13.332,
-"d": 0.2
-},
-{
-"w": "sobre",
-"who": "EMILIANO",
-"t": 13.532,
-"d": 0.237
-},
-{
-"w": "la",
-"who": "EMILIANO",
-"t": 13.807,
-"d": 0.062
-},
-{
-"w": "densidad",
-"who": "EMILIANO",
-"t": 13.92,
-"d": 0.325
-},
-{
-"w": "de",
-"who": "EMILIANO",
-"t": 14.282,
-"d": 0.062
+"w": "es",
+"who": "FERNANDO",
+"t": 1.989,
+"d": 0.138
 },
 {
 "w": "una",
-"who": "EMILIANO",
-"t": 14.345,
-"d": 0.163
+"who": "FERNANDO",
+"t": 2.139,
+"d": 0.138
 },
 {
-"w": "masa",
-"who": "EMILIANO",
-"t": 14.532,
-"d": 0.338
+"w": "estadística",
+"who": "FERNANDO",
+"t": 2.288,
+"d": 0.65
 },
 {
-"w": "utilizamos",
-"who": "EMILIANO",
-"t": 15.057,
-"d": 0.588
+"w": "lejana",
+"who": "FERNANDO",
+"t": 2.951,
+"d": 0.412
+},
+{
+"w": "ni",
+"who": "FERNANDO",
+"t": 3.376,
+"d": 0.188
+},
+{
+"w": "un",
+"who": "FERNANDO",
+"t": 3.576,
+"d": 0.138
+},
+{
+"w": "problema",
+"who": "FERNANDO",
+"t": 3.726,
+"d": 0.425
+},
+{
+"w": "resuelto",
+"who": "FERNANDO",
+"t": 4.163,
+"d": 0.613
+},
+{
+"w": "Hoy",
+"who": "FERNANDO",
+"t": 5.639,
+"d": 0.3
+},
+{
+"w": "en",
+"who": "FERNANDO",
+"t": 6.201,
+"d": 0.113
+},
+{
+"w": "México",
+"who": "FERNANDO",
+"t": 6.326,
+"d": 0.525
 },
 {
 "w": "el",
-"who": "EMILIANO",
-"t": 15.645,
-"d": 0.062
+"who": "FERNANDO",
+"t": 7.139,
+"d": 0.175
 },
 {
-"w": "ultrasonido",
-"who": "EMILIANO",
-"t": 15.72,
-"d": 0.55
+"w": "cáncer",
+"who": "FERNANDO",
+"t": 7.326,
+"d": 0.4
 },
 {
-"w": "tradicional",
-"who": "EMILIANO",
-"t": 16.32,
+"w": "de",
+"who": "FERNANDO",
+"t": 7.739,
+"d": 0.087
+},
+{
+"w": "mama",
+"who": "FERNANDO",
+"t": 7.838,
+"d": 0.3
+},
+{
+"w": "sigue",
+"who": "FERNANDO",
+"t": 8.151,
+"d": 0.312
+},
+{
+"w": "siendo",
+"who": "FERNANDO",
+"t": 8.476,
+"d": 0.375
+},
+{
+"w": "la",
+"who": "FERNANDO",
+"t": 8.864,
+"d": 0.1
+},
+{
+"w": "primera",
+"who": "FERNANDO",
+"t": 8.976,
+"d": 0.4
+},
+{
+"w": "causa",
+"who": "FERNANDO",
+"t": 9.389,
+"d": 0.338
+},
+{
+"w": "de",
+"who": "FERNANDO",
+"t": 9.738,
+"d": 0.113
+},
+{
+"w": "muerte",
+"who": "FERNANDO",
+"t": 9.863,
+"d": 0.375
+},
+{
+"w": "por",
+"who": "FERNANDO",
+"t": 10.251,
+"d": 0.2
+},
+{
+"w": "tumores",
+"who": "FERNANDO",
+"t": 10.463,
+"d": 0.45
+},
+{
+"w": "malignos",
+"who": "FERNANDO",
+"t": 10.926,
+"d": 0.512
+},
+{
+"w": "en",
+"who": "FERNANDO",
+"t": 11.451,
+"d": 0.087
+},
+{
+"w": "mujeres",
+"who": "FERNANDO",
+"t": 11.551,
 "d": 0.637
 },
 {
 "w": "Las",
 "who": "EMILIANO",
-"t": 17.832,
-"d": 0.25
-},
-{
-"w": "ondas",
-"who": "EMILIANO",
-"t": 18.082,
+"t": 12.925,
 "d": 0.2
 },
 {
-"w": "de",
+"w": "cifras",
 "who": "EMILIANO",
-"t": 18.307,
-"d": 0.062
+"t": 13.014,
+"d": 0.388
 },
 {
-"w": "sonido",
+"w": "oficiales",
 "who": "EMILIANO",
-"t": 18.395,
-"d": 0.287
+"t": 13.402,
+"d": 0.475
 },
 {
-"w": "rebotan",
+"w": "del",
 "who": "EMILIANO",
-"t": 18.72,
-"d": 0.412
+"t": 13.914,
+"d": 0.113
+},
+{
+"w": "INEGI",
+"who": "EMILIANO",
+"t": 14.039,
+"d": 0.312
+},
+{
+"w": "son",
+"who": "EMILIANO",
+"t": 14.364,
+"d": 0.212
+},
+{
+"w": "contundentes",
+"who": "EMILIANO",
+"t": 14.602,
+"d": 0.812
+},
+{
+"w": "tan",
+"who": "EMILIANO",
+"t": 15.777,
+"d": 0.113
+},
+{
+"w": "solo",
+"who": "EMILIANO",
+"t": 15.914,
+"d": 0.225
 },
 {
 "w": "en",
 "who": "EMILIANO",
-"t": 19.145,
-"d": 0.087
+"t": 16.139,
+"d": 0.05
 },
 {
-"w": "los",
+"w": "dos",
 "who": "EMILIANO",
-"t": 19.232,
+"t": 16.239,
+"d": 0.1
+},
+{
+"w": "mil",
+"who": "EMILIANO",
+"t": 16.402,
 "d": 0.125
 },
 {
-"w": "tejidos",
+"w": "veinticuatro",
 "who": "EMILIANO",
-"t": 19.42,
-"d": 0.425
+"t": 16.552,
+"d": 0.575
+},
+{
+"w": "fallecieron",
+"who": "EMILIANO",
+"t": 17.152,
+"d": 0.475
+},
+{
+"w": "ocho",
+"who": "EMILIANO",
+"t": 17.639,
+"d": 0.2
+},
+{
+"w": "mil",
+"who": "EMILIANO",
+"t": 17.877,
+"d": 0.138
+},
+{
+"w": "cuatrocientas",
+"who": "EMILIANO",
+"t": 18.064,
+"d": 0.6
+},
+{
+"w": "cincuenta",
+"who": "EMILIANO",
+"t": 18.664,
+"d": 0.487
 },
 {
 "w": "y",
 "who": "EMILIANO",
-"t": 19.87,
+"t": 19.202,
 "d": 0.037
 },
 {
-"w": "nos",
+"w": "una",
 "who": "EMILIANO",
-"t": 19.932,
-"d": 0.087
+"t": 19.264,
+"d": 0.125
 },
 {
-"w": "dibujan",
+"w": "personas",
 "who": "EMILIANO",
-"t": 20.07,
-"d": 0.338
+"t": 19.452,
+"d": 0.362
 },
 {
-"w": "un",
+"w": "por",
 "who": "EMILIANO",
-"t": 20.42,
-"d": 0.062
-},
-{
-"w": "mapa",
-"who": "EMILIANO",
-"t": 20.52,
-"d": 0.2
-},
-{
-"w": "acústico",
-"who": "EMILIANO",
-"t": 20.72,
-"d": 0.625
-},
-{
-"w": "Así",
-"who": "EMILIANO",
-"t": 22.27,
-"d": 0.275
-},
-{
-"w": "sabemos",
-"who": "EMILIANO",
-"t": 22.57,
-"d": 0.325
-},
-{
-"w": "si",
-"who": "EMILIANO",
-"t": 22.895,
-"d": 0.087
-},
-{
-"w": "enfrentamos",
-"who": "EMILIANO",
-"t": 22.982,
-"d": 0.537
-},
-{
-"w": "un",
-"who": "EMILIANO",
-"t": 23.532,
-"d": 0.113
-},
-{
-"w": "quiste",
-"who": "EMILIANO",
-"t": 23.657,
-"d": 0.25
-},
-{
-"w": "inofensivo",
-"who": "EMILIANO",
-"t": 23.932,
-"d": 0.625
-},
-{
-"w": "o",
-"who": "EMILIANO",
-"t": 24.807,
+"t": 19.864,
 "d": 0.1
 },
 {
-"w": "un",
+"w": "esta",
 "who": "EMILIANO",
-"t": 24.907,
+"t": 19.964,
+"d": 0.188
+},
+{
+"w": "enfermedad",
+"who": "EMILIANO",
+"t": 20.152,
+"d": 0.512
+},
+{
+"w": "en",
+"who": "EMILIANO",
+"t": 20.664,
+"d": 0.025
+},
+{
+"w": "el",
+"who": "EMILIANO",
+"t": 20.702,
+"d": 0.087
+},
+{
+"w": "país",
+"who": "EMILIANO",
+"t": 20.852,
+"d": 0.388
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 21.539,
+"d": 0.062
+},
+{
+"w": "las",
+"who": "EMILIANO",
+"t": 21.639,
+"d": 0.15
+},
+{
+"w": "cuales",
+"who": "EMILIANO",
+"t": 21.827,
+"d": 0.275
+},
+{
+"w": "ocho",
+"who": "EMILIANO",
+"t": 22.102,
+"d": 0.212
+},
+{
+"w": "mil",
+"who": "EMILIANO",
+"t": 22.352,
+"d": 0.15
+},
+{
+"w": "trescientas",
+"who": "EMILIANO",
+"t": 22.539,
+"d": 0.512
+},
+{
+"w": "ochenta",
+"who": "EMILIANO",
+"t": 23.052,
+"d": 0.35
+},
+{
+"w": "y",
+"who": "EMILIANO",
+"t": 23.414,
+"d": 0.05
+},
+{
+"w": "cuatro",
+"who": "EMILIANO",
+"t": 23.514,
+"d": 0.237
+},
+{
+"w": "fueron",
+"who": "EMILIANO",
+"t": 23.777,
+"d": 0.212
+},
+{
+"w": "mujeres",
+"who": "EMILIANO",
+"t": 24.014,
+"d": 0.487
+},
+{
+"w": "En",
+"who": "EMILIANO",
+"t": 25.402,
+"d": 0.15
+},
+{
+"w": "dos",
+"who": "EMILIANO",
+"t": 25.602,
+"d": 0.113
+},
+{
+"w": "mil",
+"who": "EMILIANO",
+"t": 25.764,
 "d": 0.138
 },
 {
-"w": "tumor",
+"w": "veinticinco",
 "who": "EMILIANO",
-"t": 25.057,
-"d": 0.2
+"t": 25.927,
+"d": 0.55
 },
 {
-"w": "sólido",
+"w": "la",
 "who": "EMILIANO",
-"t": 25.282,
-"d": 0.312
+"t": 26.514,
+"d": 0.087
+},
+{
+"w": "cifra",
+"who": "EMILIANO",
+"t": 26.614,
+"d": 0.3
+},
+{
+"w": "se",
+"who": "EMILIANO",
+"t": 26.927,
+"d": 0.087
+},
+{
+"w": "mantuvo",
+"who": "EMILIANO",
+"t": 27.039,
+"d": 0.362
+},
+{
+"w": "por",
+"who": "EMILIANO",
+"t": 27.464,
+"d": 0.1
+},
+{
+"w": "encima",
+"who": "EMILIANO",
+"t": 27.564,
+"d": 0.338
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 27.952,
+"d": 0.013
+},
+{
+"w": "las",
+"who": "EMILIANO",
+"t": 27.989,
+"d": 0.163
+},
+{
+"w": "ocho",
+"who": "EMILIANO",
+"t": 28.152,
+"d": 0.225
+},
+{
+"w": "mil",
+"who": "EMILIANO",
+"t": 28.414,
+"d": 0.163
+},
+{
+"w": "cien",
+"who": "EMILIANO",
+"t": 28.577,
+"d": 0.212
+},
+{
+"w": "muertes",
+"who": "EMILIANO",
+"t": 28.814,
+"d": 0.475
+},
+{
+"w": "Eso",
+"who": "EMILIANO",
+"t": 30.214,
+"d": 0.275
+},
+{
+"w": "significa",
+"who": "EMILIANO",
+"t": 30.527,
+"d": 0.525
 },
 {
 "w": "que",
 "who": "EMILIANO",
-"t": 25.645,
+"t": 31.127,
+"d": 0.175
+},
+{
+"w": "en",
+"who": "EMILIANO",
+"t": 31.602,
+"d": 0.15
+},
+{
+"w": "promedio",
+"who": "EMILIANO",
+"t": 31.764,
+"d": 0.487
+},
+{
+"w": "casi",
+"who": "EMILIANO",
+"t": 32.552,
+"d": 0.237
+},
+{
+"w": "veintitrés",
+"who": "EMILIANO",
+"t": 32.814,
+"d": 0.45
+},
+{
+"w": "mujeres",
+"who": "EMILIANO",
+"t": 33.302,
+"d": 0.325
+},
+{
+"w": "mueren",
+"who": "EMILIANO",
+"t": 33.677,
+"d": 0.263
+},
+{
+"w": "cada",
+"who": "EMILIANO",
+"t": 33.964,
+"d": 0.175
+},
+{
+"w": "día",
+"who": "EMILIANO",
+"t": 34.189,
+"d": 0.15
+},
+{
+"w": "en",
+"who": "EMILIANO",
+"t": 34.339,
+"d": 0.037
+},
+{
+"w": "México",
+"who": "EMILIANO",
+"t": 34.427,
+"d": 0.35
+},
+{
+"w": "por",
+"who": "EMILIANO",
+"t": 34.839,
+"d": 0.125
+},
+{
+"w": "cáncer",
+"who": "EMILIANO",
+"t": 35.014,
+"d": 0.3
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 35.339,
 "d": 0.075
 },
 {
-"w": "requiere",
+"w": "mama",
 "who": "EMILIANO",
-"t": 25.757,
-"d": 0.312
+"t": 35.439,
+"d": 0.275
 },
 {
-"w": "biopsia",
-"who": "EMILIANO",
-"t": 26.12,
-"d": 0.45
+"w": "Y",
+"who": "SANTIAGO",
+"t": 36.468,
+"d": 0.145
+},
+{
+"w": "lejos",
+"who": "SANTIAGO",
+"t": 36.542,
+"d": 0.395
+},
+{
+"w": "de",
+"who": "SANTIAGO",
+"t": 36.95,
+"d": 0.066
+},
+{
+"w": "bajar",
+"who": "SANTIAGO",
+"t": 37.029,
+"d": 0.368
+},
+{
+"w": "el",
+"who": "SANTIAGO",
+"t": 37.752,
+"d": 0.118
+},
+{
+"w": "problema",
+"who": "SANTIAGO",
+"t": 37.884,
+"d": 0.5
+},
+{
+"w": "ha",
+"who": "SANTIAGO",
+"t": 38.397,
+"d": 0.053
+},
+{
+"w": "crecido",
+"who": "SANTIAGO",
+"t": 38.463,
+"d": 0.539
+},
+{
+"w": "en",
+"who": "SANTIAGO",
+"t": 39.265,
+"d": 0.184
+},
+{
+"w": "la",
+"who": "SANTIAGO",
+"t": 39.463,
+"d": 0.092
+},
+{
+"w": "última",
+"who": "SANTIAGO",
+"t": 39.568,
+"d": 0.368
+},
+{
+"w": "década",
+"who": "SANTIAGO",
+"t": 39.95,
+"d": 0.421
+},
+{
+"w": "la",
+"who": "SANTIAGO",
+"t": 40.384,
+"d": 0.118
+},
+{
+"w": "tasa",
+"who": "SANTIAGO",
+"t": 40.515,
+"d": 0.329
+},
+{
+"w": "de",
+"who": "SANTIAGO",
+"t": 40.857,
+"d": 0.105
+},
+{
+"w": "mortalidad",
+"who": "SANTIAGO",
+"t": 40.976,
+"d": 0.658
+},
+{
+"w": "pasó",
+"who": "SANTIAGO",
+"t": 41.647,
+"d": 0.316
+},
+{
+"w": "de",
+"who": "SANTIAGO",
+"t": 41.976,
+"d": 0.118
+},
+{
+"w": "quince",
+"who": "SANTIAGO",
+"t": 42.107,
+"d": 0.395
+},
+{
+"w": "punto",
+"who": "SANTIAGO",
+"t": 42.515,
+"d": 0.368
+},
+{
+"w": "siete",
+"who": "SANTIAGO",
+"t": 42.897,
+"d": 0.355
+},
+{
+"w": "a",
+"who": "SANTIAGO",
+"t": 43.265,
+"d": 0.026
+},
+{
+"w": "dieciocho",
+"who": "SANTIAGO",
+"t": 43.305,
+"d": 0.592
+},
+{
+"w": "punto",
+"who": "SANTIAGO",
+"t": 43.91,
+"d": 0.355
+},
+{
+"w": "siete",
+"who": "SANTIAGO",
+"t": 44.279,
+"d": 0.355
+},
+{
+"w": "defunciones",
+"who": "SANTIAGO",
+"t": 44.647,
+"d": 0.697
+},
+{
+"w": "por",
+"who": "SANTIAGO",
+"t": 45.357,
+"d": 0.197
+},
+{
+"w": "cada",
+"who": "SANTIAGO",
+"t": 45.568,
+"d": 0.289
+},
+{
+"w": "cien",
+"who": "SANTIAGO",
+"t": 45.871,
+"d": 0.276
+},
+{
+"w": "mil",
+"who": "SANTIAGO",
+"t": 46.16,
+"d": 0.224
+},
+{
+"w": "mujeres",
+"who": "SANTIAGO",
+"t": 46.397,
+"d": 0.671
+},
+{
+"w": "Se",
+"who": "SANTIAGO",
+"t": 47.979,
+"d": 0.237
+},
+{
+"w": "estiman",
+"who": "SANTIAGO",
+"t": 48.229,
+"d": 0.461
+},
+{
+"w": "más",
+"who": "SANTIAGO",
+"t": 48.702,
+"d": 0.237
+},
+{
+"w": "de",
+"who": "SANTIAGO",
+"t": 48.952,
+"d": 0.105
+},
+{
+"w": "treinta",
+"who": "SANTIAGO",
+"t": 49.071,
+"d": 0.316
+},
+{
+"w": "y",
+"who": "SANTIAGO",
+"t": 49.4,
+"d": 0.053
+},
+{
+"w": "cuatro",
+"who": "SANTIAGO",
+"t": 49.465,
+"d": 0.316
+},
+{
+"w": "mil",
+"who": "SANTIAGO",
+"t": 49.794,
+"d": 0.224
+},
+{
+"w": "casos",
+"who": "SANTIAGO",
+"t": 50.031,
+"d": 0.408
+},
+{
+"w": "nuevos",
+"who": "SANTIAGO",
+"t": 50.452,
+"d": 0.329
+},
+{
+"w": "al",
+"who": "SANTIAGO",
+"t": 50.794,
+"d": 0.132
+},
+{
+"w": "año",
+"who": "SANTIAGO",
+"t": 50.939,
+"d": 0.316
+},
+{
+"w": "y",
+"who": "SANTIAGO",
+"t": 51.544,
+"d": 0.132
+},
+{
+"w": "entre",
+"who": "SANTIAGO",
+"t": 51.689,
+"d": 0.303
+},
+{
+"w": "el",
+"who": "SANTIAGO",
+"t": 52.005,
+"d": 0.092
+},
+{
+"w": "sesenta",
+"who": "SANTIAGO",
+"t": 52.11,
+"d": 0.447
+},
+{
+"w": "y",
+"who": "SANTIAGO",
+"t": 52.571,
+"d": 0.053
+},
+{
+"w": "cuatro",
+"who": "SANTIAGO",
+"t": 52.636,
+"d": 0.395
+},
+{
+"w": "y",
+"who": "SANTIAGO",
+"t": 53.044,
+"d": 0.105
+},
+{
+"w": "el",
+"who": "SANTIAGO",
+"t": 53.163,
+"d": 0.092
+},
+{
+"w": "setenta",
+"who": "SANTIAGO",
+"t": 53.268,
+"d": 0.434
+},
+{
+"w": "y",
+"who": "SANTIAGO",
+"t": 53.715,
+"d": 0.053
+},
+{
+"w": "dos",
+"who": "SANTIAGO",
+"t": 53.781,
+"d": 0.237
+},
+{
+"w": "por",
+"who": "SANTIAGO",
+"t": 54.031,
+"d": 0.184
+},
+{
+"w": "ciento",
+"who": "SANTIAGO",
+"t": 54.229,
+"d": 0.368
+},
+{
+"w": "se",
+"who": "SANTIAGO",
+"t": 54.61,
+"d": 0.145
+},
+{
+"w": "diagnostican",
+"who": "SANTIAGO",
+"t": 54.768,
+"d": 0.816
+},
+{
+"w": "cuando",
+"who": "SANTIAGO",
+"t": 55.597,
+"d": 0.289
+},
+{
+"w": "la",
+"who": "SANTIAGO",
+"t": 55.9,
+"d": 0.092
+},
+{
+"w": "enfermedad",
+"who": "SANTIAGO",
+"t": 56.005,
+"d": 0.605
+},
+{
+"w": "ya",
+"who": "SANTIAGO",
+"t": 56.623,
+"d": 0.211
+},
+{
+"w": "está",
+"who": "SANTIAGO",
+"t": 56.847,
+"d": 0.289
+},
+{
+"w": "en",
+"who": "SANTIAGO",
+"t": 57.15,
+"d": 0.092
+},
+{
+"w": "etapas",
+"who": "SANTIAGO",
+"t": 57.255,
+"d": 0.474
+},
+{
+"w": "avanzadas",
+"who": "SANTIAGO",
+"t": 57.742,
+"d": 0.789
 }
 ]

@@ -1,0 +1,17 @@
+{
+ "end": 26.445,
+ "lines": [
+  {
+   "who": "FERNANDO",
+   "text": "Sería irresponsable decir que la batalla está ganada. Los avances existen, pero miles de mujeres mexicanas siguen muriendo cada año porque el diagnóstico llega tarde, o porque las tecnologías de punta aún no están al alcance de todas.",
+   "t0": 1.3,
+   "t1": 15.593
+  },
+  {
+   "who": "OSCAR",
+   "text": "Ahí es donde la física, la acústica y la biotecnología tienen que salir del laboratorio y llegar a cada clínica. Mientras el diagnóstico llegue tarde, esta lucha sigue abierta.",
+   "t0": 16.293,
+   "t1": 26.445
+  }
+ ]
+}

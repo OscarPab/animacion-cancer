@@ -1,175 +1,196 @@
-// Escena 4 "El futuro de la detección": la IA escanea mastografías (cuadrícula digital, 99.9 %), macro al
-// laboratorio (cristal de cuarzo con electrodo de oro) y la superficie del biosensor acústico: anticuerpos anclados
-// al oro atrapan biomarcadores, la masa aumenta y la onda acústica se frena (ecuación de Sauerbrey).
-import React from "react";
+// Escena 4 "Riesgos de la radiación y valor del ultrasonido": el mastógrafo comprime y dispara rayos X ámbar;
+// la radiación llega al ADN; el tejido denso esconde la lesión; el ultrasonido, sin comprimir y sin radiación,
+// distingue quiste, tejido denso y masa sólida.
 import * as THREE from "three";
 import { AbsoluteFill } from "remotion";
+import React from "react";
 import words from "../../voice/escena4/words.json";
 import lines from "../../voice/escena4/lines.json";
 import { SceneDef } from "../shared/Stage";
-import { BALL, C, COL, Dust, FPS, Look, PI, Rig, SPHERE, V3, clamp01, cutIndex, easeOutBack, flush, glow, hold, inst, lerp, makeCam, makeDof, mesh, pulse, ramp, rng, setM, smooth, toon, voice } from "../shared/kit";
-import { Y_GEO } from "../shared/bio";
+import { BALL, C, COL, Dust, FPS, Look, PI, Rig, SPHERE, V3, clamp01, cutIndex, flush, glow, hold, inst, lerp, makeCam, makeDof, mesh, pulse, ramp, rng, setM, toon, voice } from "../shared/kit";
 import { NOINK } from "./escena1/ink";
 
 const T = voice(words);
-export const TOTAL4 = Math.ceil((lines.end + 2.2) * FPS);
-const tAI = T("primero"), tRun = T("actua"), tCount = T("analizando"), tFind = T("identificando"), tLab = T("aun") - 0.1, tSens = T("sensores"), tImag = T("imaginen"),
-  tBio = T("biosensor"), tCrys = T("utilizamos"), tGold = T("lamina"), tOro = T("oro"), tSurf = T("oro", 1) - 0.25, tAnc = T("anclar"), tVib = T("vibrar"), tMark = T("biomarcador"),
-  tHit = T("choque"), tMass = T("aumentando"), tMicro = T("ese"), tSlow = T("frena"), tRev = T("revelando"), tNano = T("precision");
-const CUTS = [0, tAI, tFind, tLab, tSurf]; // 0 cuadrícula, 1 desfile de placas, 2 detección, 3 laboratorio, 4 superficie de oro
-const NIGHT: Look = { bg: "#06182e", fog: [40, 170], sky: "#a9d6ff", ground: "#0a1c36", sun: 0.9, hemi: 0.42 };
-const LAB: Look = { bg: "#cfe8ef", fog: [60, 220], sky: "#ffffff", ground: "#9fb8c4" };
-const GOLD: Look = { bg: "#f6dc8c", fog: [30, 110], sky: "#fff7d6", ground: "#c9962a" };
-const SPOT: V3 = [-2.4, 1.5, 0.5], CRY: V3 = [0, 7, 0.3];
-
-// anticuerpos sobre el oro y los que atraparán un biomarcador
-const AB = (() => { const R = rng(61), a: { x: number; z: number; ry: number; s: number }[] = []; for (let i = -6; i <= 6; i++) for (let j = -5; j <= 3; j++) a.push({ x: i * 2.5 + (R() - 0.5) * 1.1, z: j * 2.5 + (R() - 0.5) * 1.1, ry: (R() - 0.5) * 1.2, s: 1.25 + 0.3 * R() }); return a; })();
-const CATCH = [58, 49, 67, 40, 76, 59, 31, 85, 50, 68].map((i, k) => ({ i, t: tHit + 0.33 * k }));
-const HERO = AB[CATCH[0].i];
-const massAt = (t: number) => clamp01((t - tHit) / 3.2);
-const shearPhase = (t: number) => { const x = Math.max(0, t - tHit), M = x < 3.2 ? (x * x) / 6.4 : 1.6 + (x - 3.2); return 2 * PI * 4 * ((t - tVib) - 0.5 * M); };
+export const TOTAL4 = Math.ceil((lines.end + 2.4) * FPS);
+const tMasto = T("mastografia"), tRay = T("rayos"), tIon = T("ionizante"), tDna = T("alteraciones"), tComp = T("compresion"),
+  tDense = T("densas"), tUS = T("ultrasonido"), tWave = T("ondas"), tCyst = T("quiste"), tTum = T("tumor"), tBio = T("biopsia");
+const FLASH = [tRay, tRay + 0.42, tIon];
+const CUTS = [0, tDna, tComp, tDense, tUS];
+const LOOKS: Look[] = [
+  { bg: "#1a140f", fog: [28, 130], sky: "#ffd2a8", ground: "#2a1c14", sun: 0.72, hemi: 0.32 },
+  { bg: "#120e0c", fog: [10, 55], sky: "#ffc48a", ground: "#1a100c", sun: 0.45, hemi: 0.28 },
+  { bg: "#1a140f", fog: [22, 110], sky: "#ffd2a8", ground: "#2a1c14", sun: 0.7, hemi: 0.3 },
+  { bg: "#10161c", fog: [36, 150], sky: "#d5dde6", ground: "#10161c", sun: 0.4, hemi: 0.28 },
+  { bg: "#0c2434", fog: [40, 170], sky: "#c9eeff", ground: "#0a1c2a", sun: 0.8, hemi: 0.5 },
+];
+const CYST: V3 = [-6.2, -6.2, 0.4], TUM: V3 = [6.2, -7.2, 0.2], DENSE: V3 = [0.4, 2.4, 0.3], TIP: V3 = [0, 7.2, 0];
 
 const camAt = makeCam([
-  { t: 0, s: hold(0, [5, -2, 36], [0, 0, 0], { roll: 0.03 }, 0.0022) },
-  { t: tAI, s: hold(tAI, [0, 0, 42], [0, 0, 0], { fov: 44 }, 0.001) },
-  { t: tFind, s: hold(tFind, [-3.4, 0.8, 17], SPOT, { fov: 38, roll: -0.04 }, 0.003) },
-  { t: tLab, s: hold(tLab, [11, 11, 46], [0, 6, 0], { fov: 40 }, 0.0025) },
-  { t: tSens + 0.6, dur: 50, s: hold(tSens, [6, 8.5, 27], [0, 6.5, 0], { roll: -0.02 }) },
-  { t: tImag + 0.5, dur: 40, s: hold(tImag, [2.6, 7.6, 13.5], CRY, { fov: 38, roll: 0.03 }) },
-  { t: tCrys, s: hold(tCrys, [-9.5, 8.2, 9.5], [0, 7, 0], { fov: 36, roll: -0.035 }) },
-  { t: tGold + 0.4, dur: 36, s: hold(tGold, [1.6, 7.4, 11.5], CRY, { fov: 36, roll: 0.03 }, 0.003) },
-  { t: tSurf, s: hold(tSurf, [6.5, 5, 17], [0, 1.6, 0], { fov: 40, roll: 0.03 }) },
-  { t: tVib + 0.2, dur: 32, s: hold(tVib, [0, 9.5, 27], [0, 4.2, 0], { fov: 42 }, 0.001) },
-  { t: tMark, s: hold(tMark, [-9, 12, 21], [0, 2.5, 0], { fov: 42, roll: -0.03 }) },
-  { t: tHit + 0.5, dur: 28, s: hold(tHit, [HERO.x + 3.4, 3.8, HERO.z + 8.5], [HERO.x, 2.3, HERO.z], { fov: 38, roll: 0.04 }) },
-  { t: tMicro + 0.3, dur: 44, s: hold(tMicro, [0, 8.5, 29], [0, 5, 0], { fov: 42 }, 0.0012) },
-  { t: tNano + 0.2, dur: 28, s: hold(tNano, [HERO.x + 2.6, 3.4, HERO.z + 7], [HERO.x, 2.4, HERO.z], { fov: 36, roll: -0.04 }, 0.003) },
-], [[tFind + 1.1, 1.0], [tBio, 0.9], [tOro, 0.6], [tVib, 0.7], [tHit, 0.7], [tSlow, 0.9], [tNano + 0.4, 1.3]]);
+  { t: 0, s: hold(0, [14, 1, 34], [0, -1, 0], { fov: 40, roll: -0.02 }, 0.0022) },
+  { t: tMasto, s: hold(tMasto, [7, -1.2, 15], [0, -2.2, 1], { fov: 36, roll: 0.03 }) },
+  { t: tRay, s: hold(tRay, [-7, -3, 17], [0, 0.4, 1], { fov: 40, roll: -0.04 }) },
+  { t: tDna, s: hold(tDna, [8, 1, 32], [0, 0, 0], { fov: 40, roll: 0.03 }) },
+  { t: tDna + 0.55, dur: 18, s: hold(tDna, [4.5, -1, 18], [0, -2, 0], { fov: 36, roll: -0.02 }) },
+  { t: tComp, s: hold(tComp, [4.2, -2.4, 11], [0, -2.6, 1], { fov: 34, roll: 0.04 }) },
+  { t: tDense, s: hold(tDense, [0.2, 0.2, 34], [0, 0, 0], { fov: 40 }) },
+  { t: tDense + 0.8, dur: 22, s: hold(tDense, [-0.6, 0.4, 22], [0, 0.2, 0], { fov: 38 }) },
+  { t: tUS, s: hold(tUS, [2, 3, 38], [0, 1, 0], { fov: 40, roll: -0.015 }) },
+  { t: tWave + 0.8, dur: 34, s: hold(tWave, [0, -1, 32], [0, -1.5, 0], { fov: 40 }) },
+  { t: tCyst, dur: 26, s: hold(tCyst, [-3.2, -3.4, 20], CYST, { fov: 38, roll: 0.02 }) },
+  { t: tTum, dur: 26, s: hold(tTum, [2.8, -4.2, 20], TUM, { fov: 38, roll: -0.02 }) },
+], [...FLASH.map((t) => [t, 0.7] as [number, number]), [tComp + 0.35, 1.1], [tDna + 0.9, 0.8]]);
 const dof = makeDof([
-  { t: 0, cInf: 0 }, { t: tFind, cInf: 11 }, { t: tLab, cInf: 9, focus: () => [0, 7, 0] }, { t: tCrys, cInf: 13 }, { t: tSurf, cInf: 12, focus: () => [0, 1.6, 0] },
-  { t: tVib + 0.2, dur: 32, cInf: 4, focus: () => [0, 3, 0] }, { t: tMark, cInf: 5 }, { t: tHit + 0.5, dur: 28, cInf: 13 }, { t: tMicro + 0.3, dur: 44, cInf: 4, focus: () => [0, 3, 0] }, { t: tNano + 0.2, dur: 28, cInf: 14 },
+  { t: 0, cInf: 6, focus: () => [0, -2, 1] }, { t: tMasto, cInf: 11 }, { t: tDna, cInf: 8 }, { t: tDna + 0.7, dur: 22, cInf: 12 },
+  { t: tComp, cInf: 10 }, { t: tDense, cInf: 0 }, { t: tUS, cInf: 0 }, { t: tCyst, dur: 26, cInf: 11 },
 ]);
 
-const hudText: React.CSSProperties = { position: "absolute", left: 0, right: 0, textAlign: "center", color: "#dff6ff", fontFamily: "Consolas, 'Courier New', monospace", textShadow: "0 0 24px #35d6ff, 0 0 6px #35d6ff" };
+const tag: React.CSSProperties = { position: "absolute", left: 0, right: 0, top: 150, textAlign: "center", fontFamily: "Consolas, 'Courier New', monospace", letterSpacing: 6, fontSize: 34, color: "#ffe7c4" };
+
 export const escena4: SceneDef = {
-  total: TOTAL4, dof, bloom: 0.8,
-  ink: (f) => (f / FPS < tLab ? { color: "#bfeaff", strength: 0.95 } : { color: "#030303", strength: 1 }),
-  overlays: (f) => { const t = f / FPS; return [{ c: "#06182e", o: pulse(t, tAI, 0.08) }, { c: "#ffffff", o: 0.9 * pulse(t, tLab, 0.12) }, { c: "#ffd75a", o: pulse(t, tSurf, 0.13) }]; },
+  total: TOTAL4, dof, bloom: 0.85,
+  ink: (f) => (f / FPS < tUS ? { color: "#ffd7b0", strength: 0.9 } : { color: "#c9f3ff", strength: 0.9 }),
+  overlays: (f) => {
+    const t = f / FPS;
+    return [
+      { c: "#ffb03a", o: 0.45 * Math.max(...FLASH.map((x) => (t >= x ? clamp01(1 - (t - x) * 8) : 0))) },
+      { c: "#120e0c", o: Math.max(pulse(t, tDna, 0.1), pulse(t, tComp, 0.08), pulse(t, tDense, 0.1)) },
+      { c: "#e7f7ff", o: 0.55 * pulse(t, tUS, 0.12) },
+    ];
+  },
   hud: (f) => {
-    const t = f / FPS, pct = 99.9 * smooth((t - tCount) / 2.4), aP = clamp01((t - tCount + 0.2) * 4) * clamp01((tFind + 2.6 - t) * 3) * (t < tLab ? 1 : 0);
-    const aE = clamp01((t - tMicro) * 1.6) * clamp01((tNano + 0.2 - t) * 2);
+    const t = f / FPS;
+    const a = (t0: number, t1: number) => clamp01((t - t0) * 4) * clamp01((t1 - t) * 3);
+    const ray = a(tRay, tDna - 0.15), den = a(tDense + 0.3, tUS - 0.2), us = a(tUS + 0.4, tWave + 1.2), bio = a(tBio - 0.2, tBio + 2.4);
     return (
       <AbsoluteFill>
-        {aP > 0 && <div style={{ ...hudText, top: 1390, opacity: aP }}>
-          <div style={{ fontSize: 168, fontWeight: 700, letterSpacing: 2 }}>{pct.toFixed(1)}%</div>
-          <div style={{ fontSize: 46, letterSpacing: 14, marginTop: 6 }}>DE PRECISIÓN</div>
-        </div>}
-        {aE > 0 && <div style={{ ...hudText, top: 250 + 14 * Math.sin(t * 1.3), opacity: aE, fontFamily: "'Cambria Math', Cambria, Georgia, serif", fontStyle: "italic", fontSize: 76, color: "#3a2a00", textShadow: "0 0 18px #fff6c8, 0 0 40px #fff6c8", transform: `rotate(${-2 + 1.2 * Math.sin(t * 0.9)}deg)` }}>
-          Δf = −&nbsp;<span style={{ display: "inline-block", verticalAlign: "middle", textAlign: "center", fontSize: 60 }}><span style={{ display: "block", borderBottom: "4px solid #3a2a00", padding: "0 14px" }}>2 f₀² Δm</span><span style={{ display: "block" }}>A √(ρ μ)</span></span>
-        </div>}
+        {ray > 0 && <div style={{ ...tag, opacity: ray, color: "#ffc56a", textShadow: "0 0 18px #ff9a1a" }}>RAYOS X · RADIACIÓN IONIZANTE</div>}
+        {den > 0 && <div style={{ ...tag, opacity: den, color: "#d5dde6" }}>MAMA DENSA · LESIÓN OCULTA</div>}
+        {us > 0 && <div style={{ ...tag, opacity: us, color: "#d7f6ff", textShadow: "0 0 16px #39c4ff" }}>ULTRASONIDO · SIN RADIACIÓN</div>}
+        {bio > 0 && <div style={{ ...tag, opacity: bio, top: 1500, color: "#ffd0c8" }}>AMERITA BIOPSIA</div>}
       </AbsoluteFill>
     );
   },
   make: () => {
-    const root = new THREE.Group(), rig = new Rig(root), dust = new Dust(120, 49);
-    const R = rng(17), box = new THREE.BoxGeometry(1, 1, 1), steel = toon("#1d4f86");
-    const hdr = (c: string, k = 1.6) => new THREE.MeshBasicMaterial({ color: C(c).multiplyScalar(k) });
-    const nn = <M extends THREE.Object3D>(m: M) => { m.layers.set(NOINK); return m; };
-    // ---- 0-2: mastografías e IA ----
+    const root = new THREE.Group(), rig = new Rig(root), dust = new Dust(90, 44);
+    const R = rng(19), box = new THREE.BoxGeometry(1, 1, 1);
+    const steel = toon("#5c6770"), steel2 = toon("#3c444c");
+    // ---- mastógrafo (lugares 0 y 2) ----
     const A = new THREE.Group();
-    const plate = (withMass: boolean) => {
-      const g = new THREE.Group();
-      g.add(mesh(box, toon("#0a1626"), [0, 0, -0.3], [15, 21, 0.5]), mesh(box, steel, [0, 0, -0.6], [16.4, 22.4, 0.5]), mesh(new THREE.SphereGeometry(1, 36, 20, PI / 2, PI), toon("#5f7d96"), [-7.3, 0, 0], [8.6, 9.2, 0.45]));
-      for (let i = 0; i < 9; i++) g.add(mesh(SPHERE, toon("#8ba6ba"), [-6.4 + R() * 5.6, -6 + R() * 12, 0.4], [0.6 + 1.3 * R(), 0.5 + 1.1 * R(), 0.1], [0, 0, R() * 3]));
-      if (withMass) g.add(mesh(SPHERE, toon("#b9cddb"), SPOT, [0.36, 0.3, 0.12]));
-      return g;
-    };
-    const plates = Array.from({ length: 7 }, (_, i) => { const p = plate(i === 0); A.add(p); return p; });
-    const cyan = hdr("#35d6ff"), lineGeo = box;
-    const gridV = Array.from({ length: 9 }, (_, i) => nn(mesh(lineGeo, cyan, [-7 + i * 1.75, 0, 0.9], [0.07, 1, 0.05])));
-    const gridH = Array.from({ length: 13 }, (_, i) => nn(mesh(lineGeo, cyan, [0, 10 - i * 1.667, 0.9], [14, 0.07, 0.05])));
-    const bar = nn(mesh(lineGeo, hdr("#bff4ff", 2.2), [0, 0, 1], [15, 0.28, 0.08]));
-    const frameMat = hdr("#35d6ff"), frame = new THREE.Group();
-    for (let i = 0; i < 4; i++) frame.add(nn(mesh(lineGeo, frameMat)));
-    /** marco de semiancho sx, semialto sy y grosor th */
-    const setFrame = (sx: number, sy: number, th: number) => frame.children.forEach((c, i) => {
-      if (i < 2) { c.position.set(0, i ? -sy : sy, 0); c.scale.set(2 * sx + th, th, 0.06); } else { c.position.set(i === 2 ? sx : -sx, 0, 0); c.scale.set(th, 2 * sy + th, 0.06); }
-    });
-    A.add(...gridV, ...gridH, bar, frame);
-    // ---- 3: laboratorio, cristal de cuarzo con electrodo de oro ----
-    const L = new THREE.Group(), gold = toon("#f3c33a", { emissive: C("#ffb000"), emissiveIntensity: 0.12 }), glass = (c: string, o: number) => toon(c, { transparent: true, opacity: o });
-    L.add(mesh(box, toon("#eef3f6"), [0, -0.5, -10], [160, 1, 90]), mesh(box, toon("#b9d6e0"), [0, 30, -52], [200, 80, 1]));
-    L.add(mesh(new THREE.CylinderGeometry(5, 5.4, 1.4, 36), toon("#3a4652"), [0, 0.7, 0]), mesh(new THREE.CylinderGeometry(0.2, 0.2, 6.4, 10), toon("#cfd8de"), [-3.3, 4.4, 0]), mesh(new THREE.CylinderGeometry(0.2, 0.2, 6.4, 10), toon("#cfd8de"), [3.3, 4.4, 0]));
-    L.add(mesh(new THREE.CylinderGeometry(4.3, 4.3, 0.36, 48).rotateX(PI / 2), glass("#dff3ff", 0.72), [0, 7, 0]));
-    const elec = mesh(new THREE.CylinderGeometry(2.5, 2.5, 0.12, 40).rotateX(PI / 2), gold, [0, 7, 0.24]);
-    L.add(elec, mesh(box, gold, [1.9, 5.4, 0.24], [0.7, 3.6, 0.1], [0, 0, 0.75]), mesh(new THREE.CylinderGeometry(2.5, 2.5, 0.12, 40).rotateX(PI / 2), gold, [0, 7, -0.24]));
-    for (const [x, z, c] of [[-17, -12, "#39c6b3"], [19, -16, "#6fb1ff"], [-27, -24, "#ffb35a"]] as [number, number, string][]) {
-      L.add(mesh(SPHERE, glass("#e8f7ff", 0.55), [x, 4.4, z], 4.6), mesh(SPHERE, toon(c), [x, 3.2, z], [4.1, 2.9, 4.1]), mesh(new THREE.CylinderGeometry(1.2, 1.4, 6, 20), glass("#e8f7ff", 0.55), [x, 10.6, z]));
-    }
-    for (let i = 0; i < 5; i++) L.add(mesh(new THREE.CylinderGeometry(0.9, 0.9, 8, 14), glass(["#ff8fa3", "#8fd1ff", "#b5f2a6", "#ffd98f", "#c9a6ff"][i], 0.8), [14 + i * 2.6, 4, 3 - i * 0.4]));
-    L.add(mesh(box, toon("#8fa3b0"), [19.2, 1, 2.2], [15, 2, 4]));
-    // ---- 4: superficie de oro con anticuerpos ----
-    const G = new THREE.Group(), plateG = new THREE.Group();
-    plateG.add(mesh(box, gold, [0, -0.5, 0], [260, 1, 260]));
-    const abs = inst(Y_GEO, toon("#1f9fc4"), AB.length), marks = inst(new THREE.IcosahedronGeometry(0.62, 0), toon("#5a2560"), CATCH.length), cores = inst(BALL, glow("#ff3b30", 0.8), CATCH.length);
-    plateG.add(abs);
-    const rbc = inst(new THREE.SphereGeometry(1, 20, 12), toon("#ee4a42"), 16);
-    const NW = 96, wave = nn(inst(BALL, new THREE.MeshBasicMaterial({ color: "#ffffff" }), NW));
-    G.add(plateG, marks, cores, rbc, wave);
-    root.add(A, L, G, dust.mesh);
+    A.add(mesh(box, steel2, [0, -12.2, -2], [11, 1.1, 12]), mesh(box, steel, [0, -1, -6.2], [2.6, 22, 2.6]), mesh(box, steel, [0, 9.2, -0.6], [4.6, 3.4, 7.4]),
+      mesh(new THREE.CylinderGeometry(1.5, 2, 1.4, 20), toon("#6a5428"), [0, 6.8, 1.4]), mesh(box, steel2, [0, -4.5, 0.4], [9.2, 1.1, 8.4]));
+    const paddle = mesh(box, toon("#d5dde4"), [0, 3.2, 1.2], [7.6, 0.45, 6.6]);
+    const padArm = mesh(box, steel, [0, 3.2, -3.2], [2.2, 1, 2.2]);
+    const bustMat = toon("#f0b7a4");
+    const bust = mesh(new THREE.SphereGeometry(1, 36, 20, 0, 2 * PI, 0, PI / 2), bustMat, [0, -3.9, 1.3]);
+    const inner = inst(BALL, glow("#ffb15a", 0.35), 12);
+    const beam = mesh(new THREE.ConeGeometry(3.8, 8.4, 24, 1, true).rotateX(PI), new THREE.MeshBasicMaterial({ color: C("#ffb03a").multiplyScalar(1.8), transparent: true, opacity: 0, depthWrite: false, side: THREE.DoubleSide }), [0, 2.4, 1.4]);
+    beam.layers.set(NOINK);
+    A.add(paddle, padArm, bust, inner, beam);
+    // ---- ADN ----
+    const D = new THREE.Group(), NB = 36;
+    const beadH = inst(BALL, toon("#d5e7f2"), NB * 2), beadD = inst(BALL, glow("#ff5a32", 0.55), NB * 2);
+    const rungH = inst(new THREE.CylinderGeometry(0.08, 0.08, 1, 6), toon("#9ec4d6"), NB);
+    const rungD = inst(new THREE.CylinderGeometry(0.08, 0.08, 1, 6), glow("#ff5a32", 0.4), NB);
+    const bits = inst(BALL, glow("#ffb03a", 0.9), 16);
+    bits.layers.set(NOINK);
+    D.add(beadH, beadD, rungH, rungD, bits);
+    const up = new THREE.Vector3(0, 1, 0), dir = new THREE.Vector3(), q = new THREE.Quaternion(), m4 = new THREE.Matrix4(), mid = new THREE.Vector3();
+    // ---- pantalla: mama densa ----
+    const Scr = new THREE.Group();
+    Scr.add(mesh(box, toon("#0c1218"), [0, 0, -0.5], [16, 22, 0.8]), mesh(box, steel, [0, 0, -0.9], [18, 24, 0.7]), mesh(box, steel2, [0, -14.5, -1.4], [3.2, 6, 1.6]));
+    Scr.add(mesh(new THREE.SphereGeometry(1, 32, 20, PI / 2, PI), toon("#c5ced6"), [-7.4, 0.2, 0.15], [8.4, 9.2, 0.35]));
+    const fib = inst(SPHERE, toon("#e7edf2"), 28);
+    for (let i = 0; i < 28; i++) setM(fib, i, -6.2 + R() * 7.2, -6 + R() * 12, 0.35, 0.55 + 1.3 * R(), 0.4 + 1.1 * R(), 0.16, 0, 0, R());
+    const hide = mesh(new THREE.SphereGeometry(2.4, 24, 16), toon("#f7f9fb", { transparent: true, opacity: 0.92 }), DENSE);
+    const lesion = mesh(SPHERE, toon("#b7c0c8"), DENSE, [0.7, 0.55, 0.2]);
+    Scr.add(fib, hide, lesion);
+    // ---- ultrasonido ----
+    const U = new THREE.Group();
+    for (let i = 0; i < 4; i++) U.add(mesh(box, toon(["#12324f", "#0e2944", "#143656", "#0c2238"][i]), [0, 3.6 - i * 6.4, -3.5], [64, 6.4, 0.8]));
+    U.add(mesh(box, toon("#3d7eae"), [0, 6.6, -1], [64, 0.55, 6]));
+    const probe = new THREE.Group();
+    probe.add(mesh(box, toon("#e7eef3"), [0, 3.6, 0], [4.8, 5.6, 2.3]), mesh(new THREE.CylinderGeometry(2.3, 2.3, 1.1, 20), toon("#9fd0ea"), [0, 0.7, 0]), mesh(new THREE.CylinderGeometry(0.35, 0.35, 16, 8), steel, [0, 14, 0]));
+    const cyst = mesh(new THREE.SphereGeometry(2.5, 32, 20), toon("#14385f"), CYST);
+    const tum = inst(BALL, toon("#14385f"), 9);
+    for (let i = 0; i < 9; i++) { const a = R() * 6.28, d = i ? 0.8 + R() : 0; setM(tum, i, TUM[0] + d * Math.cos(a), TUM[1] + d * 0.85 * Math.sin(a), 0.2, i ? 0.7 + 0.5 * R() : 1.5); }
+    const densePatch = inst(SPHERE, toon("#d5e2ee"), 8);
+    for (let i = 0; i < 8; i++) setM(densePatch, i, -0.4 + (R() - 0.5) * 3.2, 1.6 + (R() - 0.5) * 2.4, 0.3, 0.7 + 0.5 * R(), 0.45 + 0.3 * R(), 0.2);
+    const arcGeo = new THREE.TorusGeometry(1, 0.045, 6, 48, PI * 0.7).rotateZ(PI * 1.15);
+    const arcs = Array.from({ length: 12 }, () => { const m = mesh(arcGeo, new THREE.MeshBasicMaterial({ color: "#b9f3ff", transparent: true, depthWrite: false })); m.layers.set(NOINK); U.add(m); return m; });
+    U.add(probe, cyst, tum, densePatch);
+    root.add(A, D, Scr, U, dust.mesh);
 
     return {
       root,
       update: (f, cam, scene) => {
         const t = f / FPS, place = cutIndex(CUTS, t);
-        A.visible = place < 3; L.visible = place === 3; G.visible = place === 4;
-        const look = rig.apply(scene, cam, camAt(f), place < 3 ? NIGHT : place === 3 ? LAB : GOLD);
-        if (place < 3) {
-          // desfile de placas: aceleran mientras la IA las analiza; en el plano de detección la placa 0 queda centrada
-          const run = place === 1 ? 46 * Math.max(0, t - tRun) ** 1.6 : 0, span = 7 * 19;
-          plates.forEach((p, i) => { const x = place === 1 ? ((((i * 19 - run) % span) + span * 1.5) % span) - span / 2 : i * 60; p.position.set(x, 0, 0); p.visible = place === 1 ? Math.abs(x) < 60 : i === 0; });
-          const by = lerp(10.4, -10.4, ramp(t, 1.4, 3.6)), g0 = place === 0;
-          bar.visible = g0 && t > 1.3 && t < 5.2; bar.position.y = by;
-          gridH.forEach((m) => { m.visible = g0 && m.position.y > by; });
-          gridV.forEach((m) => { const len = 10 - by; m.visible = g0 && len > 0.2; m.scale.y = len; m.position.y = 10 - len / 2; });
-          cyan.color.set("#35d6ff").multiplyScalar(1.1 + 0.5 * pulse(t, 5.2, 0.5));
-          frame.visible = place > 0;
-          if (place === 1) { frame.position.set(0, 0, 1); setFrame(7.9, 10.9, 0.22); frameMat.color.set("#35d6ff").multiplyScalar(1.3 + 0.7 * Math.abs(Math.sin(run * 0.165))); }
-          if (place === 2) {
-            const k = ramp(t, tFind + 0.15, 0.8), alert = ramp(t, tFind + 1.1, 0.25);
-            frame.position.set(...SPOT).setZ(0.9); const fs = lerp(7, 0.85, k) * (1 + 0.08 * alert * Math.sin(t * 12)); setFrame(fs, fs, 0.09); frame.rotation.z = (1 - k) * 0.8;
-            frameMat.color.set("#35d6ff").lerp(COL.set("#ff6a2a"), alert).multiplyScalar(1.7);
-          } else frame.rotation.z = 0;
-          dust.pose(t, [0, 0, 8], [34, 44, 8], 0.6, "#6fb6ff");
-        } else if (place === 3) {
-          gold.emissiveIntensity = 0.12 + 0.9 * pulse(t, tBio + 0.15, 0.3) + 0.9 * pulse(t, tOro + 0.2, 0.35);
-          dust.pose(t, [0, 8, 6], [40, 30, 16], 0.5, "#ffffff");
-        } else {
-          gold.emissiveIntensity = 0.12;
-          const sh = t > tVib ? 0.32 * ramp(t, tVib, 0.5) * Math.sin(shearPhase(t)) : 0, m = massAt(t);
-          plateG.position.x = sh;
-          const bend: Record<number, number> = {};
-          CATCH.forEach((c) => { bend[c.i] = pulse(t, c.t + 0.05, 0.16); });
-          AB.forEach((a, i) => {
-            const e = easeOutBack((t - tAnc - 0.012 * ((i * 37) % 100)) / 0.45);
-            setM(abs, i, a.x, 0, a.z, a.s * e, a.s * e * (1 - 0.18 * (bend[i] ?? 0)), a.s * e, 0, a.ry, 0.06 * Math.sin(t * 2 + i));
-          });
-          CATCH.forEach((c, k) => {
-            const a = AB[c.i], u = clamp01((t - (c.t - 1.9)) / 1.9), on = t > tMark - 0.2;
-            const tip: V3 = [a.x + sh, 1.78 * a.s, a.z], y = lerp(17 + 1.5 * k, tip[1], u * u), x = tip[0] + (1 - u) * (3 * Math.sin(k * 2.3) + 0.8 * Math.sin(t * 2 + k)), z = tip[2] + (1 - u) * 2.5 * Math.cos(k * 1.7);
-            const s = on ? 1 + 0.25 * pulse(t, c.t + 0.08, 0.15) : 0;
-            setM(marks, k, x, y, z, s, s, s, t * (1 - u) * 2, k, t * (1 - u) * 1.3); setM(cores, k, x, y, z, 0.3 * s * (1 + 0.15 * Math.sin(t * 9 + k)));
-          });
-          for (let i = 0; i < 16; i++) {
-            const u = ramp(t, tMark + 0.1 * i, 3), y = lerp(22 + (i % 5) * 2, 6.5 + (i % 4) * 1.6, u) + 0.4 * Math.sin(t * 1.3 + i);
-            setM(rbc, i, -14 + ((i * 7.3) % 28) + Math.sin(t * 0.6 + i), t > tMark ? y - 2.2 : 60, -15 + ((i * 4.7) % 10), 0.9, 0.9, 0.3, t * 0.5 + i, i, 0);
+        A.visible = place === 0 || place === 2; D.visible = place === 1; Scr.visible = place === 3; U.visible = place === 4;
+        const look = rig.apply(scene, cam, camAt(f), LOOKS[place]);
+        if (A.visible) {
+          const press = Math.max(ramp(t, 0.8, 2.2), ramp(t, tComp, 0.7));
+          const y = lerp(3.4, -1.55, press), h = lerp(2.6, 1.35, press), w = lerp(3.2, 4.15, press);
+          paddle.position.y = y; padArm.position.y = y; bust.scale.set(w, h, w * 0.92);
+          bustMat.emissive.set("#000"); bustMat.emissiveIntensity = 0;
+          if (place === 2) { bustMat.emissive.set("#ff6a4a"); bustMat.emissiveIntensity = 0.35 * press; }
+          const flashes = Math.max(...FLASH.map((x) => (t >= x ? clamp01(1 - (t - x) * 3.2) : 0)));
+          const fl = place === 0 ? Math.max(flashes, 0.55 * ramp(t, tRay - 0.1, 0.3) * (1 - ramp(t, tDna - 0.45, 0.35))) : 0;
+          (beam.material as THREE.MeshBasicMaterial).opacity = 0.55 * fl;
+          for (let i = 0; i < 12; i++) {
+            const a = i * 1.9, rad = 0.2 + 0.55 * ((i * 5) % 8) / 8;
+            setM(inner, i, w * rad * Math.cos(a), -3.7 + h * (0.25 + 0.4 * ((i * 3) % 7) / 7), 1.3 + 0.4 * Math.sin(a), i === 4 ? 0.42 : 0.16);
           }
-          // la onda acústica: se alarga y se frena al aumentar la masa
-          const ph = shearPhase(t), k = lerp(1.7, 0.75, m), amp = 1.25 * ramp(t, tVib, 0.6), al = t > tRev ? 0.5 + 0.5 * Math.sin(t * 10) : 0;
-          for (let i = 0; i < NW; i++) { const x = -13.5 + i * 0.285; setM(wave, i, x, 10 + amp * Math.sin(k * x - ph), -6, t > tVib ? 0.22 : 0); }
-          (wave.material as THREE.MeshBasicMaterial).color.set("#35d6ff").lerp(COL.set("#ff8a2a"), m).lerp(COL.set("#ff3b30"), 0.6 * al).multiplyScalar(1.7);
-          flush(abs, marks, cores, rbc, wave);
-          dust.pose(t, [0, 7, 0], [40, 16, 30], 0.5, "#fff7d6");
+          flush(inner);
+          dust.pose(t, [0, 0, 6], [36, 40, 10], 0.55, "#ffc48a");
+        } else if (place === 1) {
+          const hit = ramp(t, tDna + 0.15, 1.7);
+          for (let i = 0; i < NB; i++) {
+            const y = (i / (NB - 1) - 0.5) * 28, a = i * 0.62 + t * 0.35, rad = 3.15;
+            const ax = rad * Math.cos(a), az = rad * Math.sin(a);
+            const dmg = clamp01((hit - 0.15) * 1.4) * (i > 12 && i < 24 ? 1 : 0.15);
+            const br = i > 16 && i < 21 ? dmg : 0;
+            const s = 0.32;
+            setM(beadH, i, ax, y, az, s * (1 - dmg)); setM(beadH, i + NB, -ax, y, -az, s * (1 - dmg));
+            setM(beadD, i, ax, y, az, s * dmg); setM(beadD, i + NB, -ax, y, -az, s * dmg);
+            mid.set(0, y, 0); dir.set(-2 * ax, 0, -2 * az);
+            const len = dir.length() * (1 - 0.92 * br); q.setFromUnitVectors(up, dir.normalize());
+            rungH.setMatrixAt(i, m4.compose(mid, q, new THREE.Vector3(0.09, Math.max(0.05, len * (1 - dmg)), 0.09)));
+            rungD.setMatrixAt(i, m4.compose(mid, q, new THREE.Vector3(0.1, Math.max(0.05, len * dmg), 0.1)));
+          }
+          flush(beadH, beadD); rungH.instanceMatrix.needsUpdate = true; rungD.instanceMatrix.needsUpdate = true;
+          for (let i = 0; i < 16; i++) {
+            const u = ((t - tDna) * 0.85 + i / 16) % 1;
+            const y = -6 + (i - 8) * 0.7;
+            setM(bits, i, lerp(16, 2.2 * Math.cos(i), u), lerp(y, -2 + (i % 5) - 2, u), lerp(4, 2 * Math.sin(i), u), 0.18 + 0.08 * (u > 0.82 ? 1 : 0));
+          }
+          flush(bits);
+          dust.pose(t, [0, 0, 2], [16, 30, 8], 0.35, "#ffc48a");
+        } else if (place === 3) {
+          const k = ramp(t, tDense + 0.4, 1.4);
+          lesion.scale.setScalar(0.55 + 0.08 * Math.sin(t * 3));
+          (hide.material as THREE.MeshToonMaterial).opacity = lerp(0.97, 0.78, k);
+          dust.pose(t, [0, 0, 6], [24, 30, 6], 0.4, "#d5dde6");
+        } else {
+          probe.position.y = lerp(16, 7.15, ramp(t, tUS + 0.2, 1.3)) + 0.08 * Math.sin(t * 1.6) * ramp(t, tUS + 1.2, 0.4);
+          arcs.forEach((m, i) => {
+            const period = 0.38 * 12;
+            const age = ((t - tWave - i * 0.38) % period + period) % period;
+            const on = t > tWave + i * 0.38;
+            const r = 7.5 * age;
+            m.visible = on && r < 30 && r > 0.2;
+            if (!m.visible) return;
+            m.position.set(...TIP); m.scale.setScalar(r);
+            const mat = m.material as THREE.MeshBasicMaterial;
+            mat.color.set("#c8f6ff").multiplyScalar(1.5);
+            mat.opacity = clamp01(1.15 - r / 30) * clamp01(r / 1.5);
+          });
+          const reveal = ramp(t, tWave + 0.8, 1.6);
+          (cyst.material as THREE.MeshToonMaterial).color.set("#14385f").lerp(COL.set("#3ecf9a"), reveal * (0.35 + 0.65 * pulse(t, tCyst + 0.4, 0.7)));
+          const tumMat = tum.material as THREE.MeshToonMaterial;
+          tumMat.color.set("#14385f").lerp(COL.set("#e8eef2"), reveal * 0.7).lerp(COL.set("#ff5a48"), reveal * pulse(t, tTum + 0.35, 0.55));
+          (densePatch.material as THREE.MeshToonMaterial).color.set("#d5e2ee");
+          densePatch.visible = t > tWave;
+          tum.visible = true; cyst.visible = true;
+          dust.pose(t, [0, 0, 6], [40, 36, 8], 0.45, "#9fd8ff");
         }
         return look;
       },
