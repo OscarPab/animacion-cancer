@@ -1,0 +1,452 @@
+[
+{
+"w": "Nuestra",
+"who": "EMILIANO",
+"t": 1.2,
+"d": 0.338
+},
+{
+"w": "primera",
+"who": "EMILIANO",
+"t": 1.5,
+"d": 0.3
+},
+{
+"w": "línea",
+"who": "EMILIANO",
+"t": 1.837,
+"d": 0.275
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 2.137,
+"d": 0.013
+},
+{
+"w": "defensa",
+"who": "EMILIANO",
+"t": 2.162,
+"d": 0.375
+},
+{
+"w": "siempre",
+"who": "EMILIANO",
+"t": 2.562,
+"d": 0.312
+},
+{
+"w": "ha",
+"who": "EMILIANO",
+"t": 2.875,
+"d": 0.062
+},
+{
+"w": "sido",
+"who": "EMILIANO",
+"t": 2.95,
+"d": 0.2
+},
+{
+"w": "la",
+"who": "EMILIANO",
+"t": 3.187,
+"d": 0.062
+},
+{
+"w": "detección",
+"who": "EMILIANO",
+"t": 3.287,
+"d": 0.438
+},
+{
+"w": "temprana",
+"who": "EMILIANO",
+"t": 3.725,
+"d": 0.487
+},
+{
+"w": "Hoy",
+"who": "EMILIANO",
+"t": 5.137,
+"d": 0.263
+},
+{
+"w": "la",
+"who": "EMILIANO",
+"t": 5.7,
+"d": 0.087
+},
+{
+"w": "mastografía",
+"who": "EMILIANO",
+"t": 5.812,
+"d": 0.575
+},
+{
+"w": "salva",
+"who": "EMILIANO",
+"t": 6.412,
+"d": 0.25
+},
+{
+"w": "millones",
+"who": "EMILIANO",
+"t": 6.687,
+"d": 0.312
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 7.037,
+"d": 0.075
+},
+{
+"w": "vidas",
+"who": "EMILIANO",
+"t": 7.125,
+"d": 0.425
+},
+{
+"w": "utilizando",
+"who": "EMILIANO",
+"t": 7.775,
+"d": 0.525
+},
+{
+"w": "rayos",
+"who": "EMILIANO",
+"t": 8.337,
+"d": 0.35
+},
+{
+"w": "X",
+"who": "EMILIANO",
+"t": 8.7,
+"d": 0.212
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 8.95,
+"d": 0.062
+},
+{
+"w": "baja",
+"who": "EMILIANO",
+"t": 9.05,
+"d": 0.188
+},
+{
+"w": "dosis",
+"who": "EMILIANO",
+"t": 9.312,
+"d": 0.237
+},
+{
+"w": "para",
+"who": "EMILIANO",
+"t": 9.612,
+"d": 0.1
+},
+{
+"w": "encontrar",
+"who": "EMILIANO",
+"t": 9.712,
+"d": 0.4
+},
+{
+"w": "anomalías",
+"who": "EMILIANO",
+"t": 10.112,
+"d": 0.55
+},
+{
+"w": "años",
+"who": "EMILIANO",
+"t": 10.662,
+"d": 0.263
+},
+{
+"w": "antes",
+"who": "EMILIANO",
+"t": 10.925,
+"d": 0.25
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 11.212,
+"d": 0.075
+},
+{
+"w": "que",
+"who": "EMILIANO",
+"t": 11.337,
+"d": 0.075
+},
+{
+"w": "puedan",
+"who": "EMILIANO",
+"t": 11.487,
+"d": 0.225
+},
+{
+"w": "palparse",
+"who": "EMILIANO",
+"t": 11.712,
+"d": 0.512
+},
+{
+"w": "Y",
+"who": "EMILIANO",
+"t": 12.931,
+"d": 0.125
+},
+{
+"w": "cuando",
+"who": "EMILIANO",
+"t": 13.007,
+"d": 0.2
+},
+{
+"w": "hay",
+"who": "EMILIANO",
+"t": 13.207,
+"d": 0.075
+},
+{
+"w": "dudas",
+"who": "EMILIANO",
+"t": 13.332,
+"d": 0.2
+},
+{
+"w": "sobre",
+"who": "EMILIANO",
+"t": 13.532,
+"d": 0.237
+},
+{
+"w": "la",
+"who": "EMILIANO",
+"t": 13.807,
+"d": 0.062
+},
+{
+"w": "densidad",
+"who": "EMILIANO",
+"t": 13.92,
+"d": 0.325
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 14.282,
+"d": 0.062
+},
+{
+"w": "una",
+"who": "EMILIANO",
+"t": 14.345,
+"d": 0.163
+},
+{
+"w": "masa",
+"who": "EMILIANO",
+"t": 14.532,
+"d": 0.338
+},
+{
+"w": "utilizamos",
+"who": "EMILIANO",
+"t": 15.057,
+"d": 0.588
+},
+{
+"w": "el",
+"who": "EMILIANO",
+"t": 15.645,
+"d": 0.062
+},
+{
+"w": "ultrasonido",
+"who": "EMILIANO",
+"t": 15.72,
+"d": 0.55
+},
+{
+"w": "tradicional",
+"who": "EMILIANO",
+"t": 16.32,
+"d": 0.637
+},
+{
+"w": "Las",
+"who": "EMILIANO",
+"t": 17.832,
+"d": 0.25
+},
+{
+"w": "ondas",
+"who": "EMILIANO",
+"t": 18.082,
+"d": 0.2
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 18.307,
+"d": 0.062
+},
+{
+"w": "sonido",
+"who": "EMILIANO",
+"t": 18.395,
+"d": 0.287
+},
+{
+"w": "rebotan",
+"who": "EMILIANO",
+"t": 18.72,
+"d": 0.412
+},
+{
+"w": "en",
+"who": "EMILIANO",
+"t": 19.145,
+"d": 0.087
+},
+{
+"w": "los",
+"who": "EMILIANO",
+"t": 19.232,
+"d": 0.125
+},
+{
+"w": "tejidos",
+"who": "EMILIANO",
+"t": 19.42,
+"d": 0.425
+},
+{
+"w": "y",
+"who": "EMILIANO",
+"t": 19.87,
+"d": 0.037
+},
+{
+"w": "nos",
+"who": "EMILIANO",
+"t": 19.932,
+"d": 0.087
+},
+{
+"w": "dibujan",
+"who": "EMILIANO",
+"t": 20.07,
+"d": 0.338
+},
+{
+"w": "un",
+"who": "EMILIANO",
+"t": 20.42,
+"d": 0.062
+},
+{
+"w": "mapa",
+"who": "EMILIANO",
+"t": 20.52,
+"d": 0.2
+},
+{
+"w": "acústico",
+"who": "EMILIANO",
+"t": 20.72,
+"d": 0.625
+},
+{
+"w": "Así",
+"who": "EMILIANO",
+"t": 22.27,
+"d": 0.275
+},
+{
+"w": "sabemos",
+"who": "EMILIANO",
+"t": 22.57,
+"d": 0.325
+},
+{
+"w": "si",
+"who": "EMILIANO",
+"t": 22.895,
+"d": 0.087
+},
+{
+"w": "enfrentamos",
+"who": "EMILIANO",
+"t": 22.982,
+"d": 0.537
+},
+{
+"w": "un",
+"who": "EMILIANO",
+"t": 23.532,
+"d": 0.113
+},
+{
+"w": "quiste",
+"who": "EMILIANO",
+"t": 23.657,
+"d": 0.25
+},
+{
+"w": "inofensivo",
+"who": "EMILIANO",
+"t": 23.932,
+"d": 0.625
+},
+{
+"w": "o",
+"who": "EMILIANO",
+"t": 24.807,
+"d": 0.1
+},
+{
+"w": "un",
+"who": "EMILIANO",
+"t": 24.907,
+"d": 0.138
+},
+{
+"w": "tumor",
+"who": "EMILIANO",
+"t": 25.057,
+"d": 0.2
+},
+{
+"w": "sólido",
+"who": "EMILIANO",
+"t": 25.282,
+"d": 0.312
+},
+{
+"w": "que",
+"who": "EMILIANO",
+"t": 25.645,
+"d": 0.075
+},
+{
+"w": "requiere",
+"who": "EMILIANO",
+"t": 25.757,
+"d": 0.312
+},
+{
+"w": "biopsia",
+"who": "EMILIANO",
+"t": 26.12,
+"d": 0.45
+}
+]

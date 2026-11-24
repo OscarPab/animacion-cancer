@@ -1,0 +1,410 @@
+[
+{
+"w": "Vencer",
+"who": "EMILIANO",
+"t": 1.2,
+"d": 0.4
+},
+{
+"w": "al",
+"who": "EMILIANO",
+"t": 1.494,
+"d": 0.113
+},
+{
+"w": "cáncer",
+"who": "EMILIANO",
+"t": 1.656,
+"d": 0.3
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 1.994,
+"d": 0.075
+},
+{
+"w": "mama",
+"who": "EMILIANO",
+"t": 2.094,
+"d": 0.212
+},
+{
+"w": "ya",
+"who": "EMILIANO",
+"t": 2.356,
+"d": 0.087
+},
+{
+"w": "no",
+"who": "EMILIANO",
+"t": 2.481,
+"d": 0.075
+},
+{
+"w": "es",
+"who": "EMILIANO",
+"t": 2.569,
+"d": 0.087
+},
+{
+"w": "un",
+"who": "EMILIANO",
+"t": 2.681,
+"d": 0.075
+},
+{
+"w": "sueño",
+"who": "EMILIANO",
+"t": 2.769,
+"d": 0.325
+},
+{
+"w": "aislado",
+"who": "EMILIANO",
+"t": 3.094,
+"d": 0.35
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 3.481,
+"d": 0.013
+},
+{
+"w": "los",
+"who": "EMILIANO",
+"t": 3.519,
+"d": 0.138
+},
+{
+"w": "médicos",
+"who": "EMILIANO",
+"t": 3.694,
+"d": 0.512
+},
+{
+"w": "Hoy",
+"who": "OSCAR",
+"t": 4.756,
+"d": 0.3
+},
+{
+"w": "la",
+"who": "OSCAR",
+"t": 5.175,
+"d": 0.15
+},
+{
+"w": "física",
+"who": "OSCAR",
+"t": 5.35,
+"d": 0.35
+},
+{
+"w": "de",
+"who": "OSCAR",
+"t": 5.737,
+"d": 0.062
+},
+{
+"w": "materiales",
+"who": "OSCAR",
+"t": 5.837,
+"d": 0.688
+},
+{
+"w": "la",
+"who": "OSCAR",
+"t": 6.712,
+"d": 0.113
+},
+{
+"w": "acústica",
+"who": "OSCAR",
+"t": 6.825,
+"d": 0.5
+},
+{
+"w": "de",
+"who": "OSCAR",
+"t": 7.362,
+"d": 0.062
+},
+{
+"w": "superficies",
+"who": "OSCAR",
+"t": 7.437,
+"d": 0.762
+},
+{
+"w": "la",
+"who": "OSCAR",
+"t": 8.475,
+"d": 0.113
+},
+{
+"w": "inteligencia",
+"who": "OSCAR",
+"t": 8.587,
+"d": 0.588
+},
+{
+"w": "artificial",
+"who": "OSCAR",
+"t": 9.175,
+"d": 0.6
+},
+{
+"w": "y",
+"who": "OSCAR",
+"t": 9.812,
+"d": 0.075
+},
+{
+"w": "la",
+"who": "OSCAR",
+"t": 9.912,
+"d": 0.075
+},
+{
+"w": "biotecnología",
+"who": "OSCAR",
+"t": 10.012,
+"d": 0.762
+},
+{
+"w": "trabajan",
+"who": "OSCAR",
+"t": 10.825,
+"d": 0.388
+},
+{
+"w": "en",
+"who": "OSCAR",
+"t": 11.225,
+"d": 0.125
+},
+{
+"w": "perfecta",
+"who": "OSCAR",
+"t": 11.362,
+"d": 0.4
+},
+{
+"w": "sincronía",
+"who": "OSCAR",
+"t": 11.787,
+"d": 0.588
+},
+{
+"w": "La",
+"who": "FERNANDO",
+"t": 12.945,
+"d": 0.163
+},
+{
+"w": "ciencia",
+"who": "FERNANDO",
+"t": 13.052,
+"d": 0.4
+},
+{
+"w": "está",
+"who": "FERNANDO",
+"t": 13.465,
+"d": 0.225
+},
+{
+"w": "convirtiendo",
+"who": "FERNANDO",
+"t": 13.702,
+"d": 0.662
+},
+{
+"w": "una",
+"who": "FERNANDO",
+"t": 14.377,
+"d": 0.2
+},
+{
+"w": "de",
+"who": "FERNANDO",
+"t": 14.59,
+"d": 0.113
+},
+{
+"w": "las",
+"who": "FERNANDO",
+"t": 14.715,
+"d": 0.163
+},
+{
+"w": "enfermedades",
+"who": "FERNANDO",
+"t": 14.89,
+"d": 0.725
+},
+{
+"w": "más",
+"who": "FERNANDO",
+"t": 15.627,
+"d": 0.212
+},
+{
+"w": "temidas",
+"who": "FERNANDO",
+"t": 15.852,
+"d": 0.412
+},
+{
+"w": "de",
+"who": "FERNANDO",
+"t": 16.277,
+"d": 0.075
+},
+{
+"w": "la",
+"who": "FERNANDO",
+"t": 16.365,
+"d": 0.075
+},
+{
+"w": "historia",
+"who": "FERNANDO",
+"t": 16.452,
+"d": 0.463
+},
+{
+"w": "en",
+"who": "FERNANDO",
+"t": 16.927,
+"d": 0.1
+},
+{
+"w": "un",
+"who": "FERNANDO",
+"t": 17.04,
+"d": 0.113
+},
+{
+"w": "padecimiento",
+"who": "FERNANDO",
+"t": 17.165,
+"d": 0.688
+},
+{
+"w": "detectable",
+"who": "FERNANDO",
+"t": 17.865,
+"d": 0.637
+},
+{
+"w": "tratable",
+"who": "FERNANDO",
+"t": 18.74,
+"d": 0.525
+},
+{
+"w": "y",
+"who": "FERNANDO",
+"t": 19.515,
+"d": 0.1
+},
+{
+"w": "cada",
+"who": "FERNANDO",
+"t": 19.627,
+"d": 0.263
+},
+{
+"w": "vez",
+"who": "FERNANDO",
+"t": 19.902,
+"d": 0.25
+},
+{
+"w": "más",
+"who": "FERNANDO",
+"t": 20.165,
+"d": 0.325
+},
+{
+"w": "curable",
+"who": "FERNANDO",
+"t": 20.727,
+"d": 0.512
+},
+{
+"w": "La",
+"who": "SANTIAGO",
+"t": 21.761,
+"d": 0.171
+},
+{
+"w": "investigación",
+"who": "SANTIAGO",
+"t": 21.86,
+"d": 0.842
+},
+{
+"w": "salva",
+"who": "SANTIAGO",
+"t": 22.716,
+"d": 0.342
+},
+{
+"w": "vidas",
+"who": "SANTIAGO",
+"t": 23.071,
+"d": 0.526
+},
+{
+"w": "Y",
+"who": "SANTIAGO",
+"t": 24.508,
+"d": 0.158
+},
+{
+"w": "el",
+"who": "SANTIAGO",
+"t": 24.679,
+"d": 0.105
+},
+{
+"w": "futuro",
+"who": "SANTIAGO",
+"t": 24.797,
+"d": 0.5
+},
+{
+"w": "finalmente",
+"who": "SANTIAGO",
+"t": 25.547,
+"d": 0.75
+},
+{
+"w": "está",
+"who": "SANTIAGO",
+"t": 26.573,
+"d": 0.355
+},
+{
+"w": "a",
+"who": "SANTIAGO",
+"t": 26.942,
+"d": 0.039
+},
+{
+"w": "nuestro",
+"who": "SANTIAGO",
+"t": 26.994,
+"d": 0.355
+},
+{
+"w": "favor",
+"who": "SANTIAGO",
+"t": 27.363,
+"d": 0.487
+}
+]

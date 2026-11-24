@@ -1,0 +1,29 @@
+{
+ "end": 27.779,
+ "lines": [
+  {
+   "who": "EMILIANO",
+   "text": "Vencer al cáncer de mama ya no es un sueño aislado de los médicos.",
+   "t0": 1.2,
+   "t1": 4.206
+  },
+  {
+   "who": "OSCAR",
+   "text": "Hoy, la física de materiales, la acústica de superficies, la inteligencia artificial y la biotecnología trabajan en perfecta sincronía.",
+   "t0": 4.756,
+   "t1": 12.395
+  },
+  {
+   "who": "FERNANDO",
+   "text": "La ciencia está convirtiendo una de las enfermedades más temidas de la historia en un padecimiento detectable, tratable, y cada vez más, curable.",
+   "t0": 12.945,
+   "t1": 21.211
+  },
+  {
+   "who": "SANTIAGO",
+   "text": "La investigación salva vidas. Y el futuro, finalmente, está a nuestro favor.",
+   "t0": 21.761,
+   "t1": 27.779
+  }
+ ]
+}

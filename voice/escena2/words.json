@@ -1,0 +1,368 @@
+[
+{
+"w": "Para",
+"who": "SANTIAGO",
+"t": 1.2,
+"d": 0.224
+},
+{
+"w": "sostener",
+"who": "SANTIAGO",
+"t": 1.33,
+"d": 0.539
+},
+{
+"w": "este",
+"who": "SANTIAGO",
+"t": 1.882,
+"d": 0.224
+},
+{
+"w": "crecimiento",
+"who": "SANTIAGO",
+"t": 2.119,
+"d": 0.579
+},
+{
+"w": "explosivo",
+"who": "SANTIAGO",
+"t": 2.711,
+"d": 0.645
+},
+{
+"w": "el",
+"who": "SANTIAGO",
+"t": 3.646,
+"d": 0.184
+},
+{
+"w": "tumor",
+"who": "SANTIAGO",
+"t": 3.843,
+"d": 0.355
+},
+{
+"w": "piratea",
+"who": "SANTIAGO",
+"t": 4.211,
+"d": 0.526
+},
+{
+"w": "el",
+"who": "SANTIAGO",
+"t": 4.751,
+"d": 0.079
+},
+{
+"w": "sistema",
+"who": "SANTIAGO",
+"t": 4.843,
+"d": 0.474
+},
+{
+"w": "circulatorio",
+"who": "SANTIAGO",
+"t": 5.33,
+"d": 0.934
+},
+{
+"w": "A",
+"who": "SANTIAGO",
+"t": 7.175,
+"d": 0.184
+},
+{
+"w": "esto",
+"who": "SANTIAGO",
+"t": 7.372,
+"d": 0.289
+},
+{
+"w": "le",
+"who": "SANTIAGO",
+"t": 7.675,
+"d": 0.092
+},
+{
+"w": "llamamos",
+"who": "SANTIAGO",
+"t": 7.78,
+"d": 0.487
+},
+{
+"w": "angiogénesis",
+"who": "SANTIAGO",
+"t": 8.28,
+"d": 0.855
+},
+{
+"w": "obliga",
+"who": "SANTIAGO",
+"t": 9.425,
+"d": 0.382
+},
+{
+"w": "al",
+"who": "SANTIAGO",
+"t": 9.819,
+"d": 0.118
+},
+{
+"w": "cuerpo",
+"who": "SANTIAGO",
+"t": 9.951,
+"d": 0.355
+},
+{
+"w": "a",
+"who": "SANTIAGO",
+"t": 10.319,
+"d": 0.039
+},
+{
+"w": "crear",
+"who": "SANTIAGO",
+"t": 10.372,
+"d": 0.368
+},
+{
+"w": "nuevos",
+"who": "SANTIAGO",
+"t": 10.753,
+"d": 0.382
+},
+{
+"w": "vasos",
+"who": "SANTIAGO",
+"t": 11.148,
+"d": 0.289
+},
+{
+"w": "sanguíneos",
+"who": "SANTIAGO",
+"t": 11.451,
+"d": 0.645
+},
+{
+"w": "exclusivos",
+"who": "SANTIAGO",
+"t": 12.359,
+"d": 0.789
+},
+{
+"w": "para",
+"who": "SANTIAGO",
+"t": 13.161,
+"d": 0.197
+},
+{
+"w": "alimentarlo",
+"who": "SANTIAGO",
+"t": 13.372,
+"d": 0.789
+},
+{
+"w": "Si",
+"who": "FERNANDO",
+"t": 14.759,
+"d": 0.25
+},
+{
+"w": "no",
+"who": "FERNANDO",
+"t": 14.936,
+"d": 0.138
+},
+{
+"w": "se",
+"who": "FERNANDO",
+"t": 15.086,
+"d": 0.125
+},
+{
+"w": "detiene",
+"who": "FERNANDO",
+"t": 15.223,
+"d": 0.362
+},
+{
+"w": "a",
+"who": "FERNANDO",
+"t": 15.598,
+"d": 0.05
+},
+{
+"w": "tiempo",
+"who": "FERNANDO",
+"t": 15.661,
+"d": 0.45
+},
+{
+"w": "estas",
+"who": "FERNANDO",
+"t": 16.373,
+"d": 0.35
+},
+{
+"w": "células",
+"who": "FERNANDO",
+"t": 16.736,
+"d": 0.438
+},
+{
+"w": "rompen",
+"who": "FERNANDO",
+"t": 17.186,
+"d": 0.325
+},
+{
+"w": "las",
+"who": "FERNANDO",
+"t": 17.523,
+"d": 0.15
+},
+{
+"w": "barreras",
+"who": "FERNANDO",
+"t": 17.686,
+"d": 0.438
+},
+{
+"w": "del",
+"who": "FERNANDO",
+"t": 18.136,
+"d": 0.138
+},
+{
+"w": "tejido",
+"who": "FERNANDO",
+"t": 18.286,
+"d": 0.375
+},
+{
+"w": "original",
+"who": "FERNANDO",
+"t": 18.673,
+"d": 0.537
+},
+{
+"w": "viajando",
+"who": "FERNANDO",
+"t": 19.523,
+"d": 0.475
+},
+{
+"w": "por",
+"who": "FERNANDO",
+"t": 20.011,
+"d": 0.188
+},
+{
+"w": "la",
+"who": "FERNANDO",
+"t": 20.211,
+"d": 0.087
+},
+{
+"w": "sangre",
+"who": "FERNANDO",
+"t": 20.311,
+"d": 0.438
+},
+{
+"w": "o",
+"who": "FERNANDO",
+"t": 20.761,
+"d": 0.125
+},
+{
+"w": "el",
+"who": "FERNANDO",
+"t": 20.898,
+"d": 0.075
+},
+{
+"w": "sistema",
+"who": "FERNANDO",
+"t": 20.986,
+"d": 0.438
+},
+{
+"w": "linfático",
+"who": "FERNANDO",
+"t": 21.436,
+"d": 0.675
+},
+{
+"w": "para",
+"who": "FERNANDO",
+"t": 22.348,
+"d": 0.212
+},
+{
+"w": "colonizar",
+"who": "FERNANDO",
+"t": 22.573,
+"d": 0.575
+},
+{
+"w": "otros",
+"who": "FERNANDO",
+"t": 23.161,
+"d": 0.3
+},
+{
+"w": "órganos",
+"who": "FERNANDO",
+"t": 23.473,
+"d": 0.6
+},
+{
+"w": "A",
+"who": "FERNANDO",
+"t": 24.936,
+"d": 0.163
+},
+{
+"w": "este",
+"who": "FERNANDO",
+"t": 25.111,
+"d": 0.25
+},
+{
+"w": "proceso",
+"who": "FERNANDO",
+"t": 25.373,
+"d": 0.388
+},
+{
+"w": "invasivo",
+"who": "FERNANDO",
+"t": 25.773,
+"d": 0.5
+},
+{
+"w": "lo",
+"who": "FERNANDO",
+"t": 26.286,
+"d": 0.113
+},
+{
+"w": "conocemos",
+"who": "FERNANDO",
+"t": 26.411,
+"d": 0.575
+},
+{
+"w": "como",
+"who": "FERNANDO",
+"t": 26.998,
+"d": 0.212
+},
+{
+"w": "metástasis",
+"who": "FERNANDO",
+"t": 27.223,
+"d": 0.838
+}
+]

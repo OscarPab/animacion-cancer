@@ -1,0 +1,23 @@
+{
+ "end": 44.57,
+ "lines": [
+  {
+   "who": "FERNANDO",
+   "text": "La detección es solo la mitad de la batalla. Las curas también han dado un salto cuántico, alejándose de la quimioterapia tradicional, que dañaba todo el cuerpo.",
+   "t0": 1.0,
+   "t1": 10.582
+  },
+  {
+   "who": "SANTIAGO",
+   "text": "El avance más poderoso de nuestra era son los A D C, o Conjugados Anticuerpo-Fármaco. Son, literalmente, un caballo de Troya molecular.",
+   "t0": 11.182,
+   "t1": 20.906
+  },
+  {
+   "who": "SANTIAGO",
+   "text": "Diseñamos anticuerpos en laboratorio que rastrean únicamente las proteínas que cubren al tumor, como la HER dos o la TROP dos, en el agresivo cáncer Triple Negativo. El anticuerpo se ancla a la célula enferma, penetra sus defensas, y libera la toxina quimioterapéutica solo en su interior. Destrucción total del cáncer, con mínimo daño colateral.",
+   "t0": 21.506,
+   "t1": 44.57
+  }
+ ]
+}

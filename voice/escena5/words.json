@@ -1,0 +1,626 @@
+[
+{
+"w": "La",
+"who": "FERNANDO",
+"t": 1.0,
+"d": 0.15
+},
+{
+"w": "detección",
+"who": "FERNANDO",
+"t": 1.083,
+"d": 0.537
+},
+{
+"w": "es",
+"who": "FERNANDO",
+"t": 1.633,
+"d": 0.1
+},
+{
+"w": "solo",
+"who": "FERNANDO",
+"t": 1.746,
+"d": 0.237
+},
+{
+"w": "la",
+"who": "FERNANDO",
+"t": 1.996,
+"d": 0.087
+},
+{
+"w": "mitad",
+"who": "FERNANDO",
+"t": 2.096,
+"d": 0.325
+},
+{
+"w": "de",
+"who": "FERNANDO",
+"t": 2.433,
+"d": 0.087
+},
+{
+"w": "la",
+"who": "FERNANDO",
+"t": 2.533,
+"d": 0.075
+},
+{
+"w": "batalla",
+"who": "FERNANDO",
+"t": 2.621,
+"d": 0.512
+},
+{
+"w": "Las",
+"who": "FERNANDO",
+"t": 3.996,
+"d": 0.237
+},
+{
+"w": "curas",
+"who": "FERNANDO",
+"t": 4.246,
+"d": 0.325
+},
+{
+"w": "también",
+"who": "FERNANDO",
+"t": 4.583,
+"d": 0.362
+},
+{
+"w": "han",
+"who": "FERNANDO",
+"t": 4.958,
+"d": 0.138
+},
+{
+"w": "dado",
+"who": "FERNANDO",
+"t": 5.108,
+"d": 0.212
+},
+{
+"w": "un",
+"who": "FERNANDO",
+"t": 5.333,
+"d": 0.113
+},
+{
+"w": "salto",
+"who": "FERNANDO",
+"t": 5.458,
+"d": 0.338
+},
+{
+"w": "cuántico",
+"who": "FERNANDO",
+"t": 5.808,
+"d": 0.525
+},
+{
+"w": "alejándose",
+"who": "FERNANDO",
+"t": 6.571,
+"d": 0.662
+},
+{
+"w": "de",
+"who": "FERNANDO",
+"t": 7.246,
+"d": 0.1
+},
+{
+"w": "la",
+"who": "FERNANDO",
+"t": 7.358,
+"d": 0.1
+},
+{
+"w": "quimioterapia",
+"who": "FERNANDO",
+"t": 7.471,
+"d": 0.713
+},
+{
+"w": "tradicional",
+"who": "FERNANDO",
+"t": 8.196,
+"d": 0.725
+},
+{
+"w": "que",
+"who": "FERNANDO",
+"t": 9.183,
+"d": 0.113
+},
+{
+"w": "dañaba",
+"who": "FERNANDO",
+"t": 9.308,
+"d": 0.45
+},
+{
+"w": "todo",
+"who": "FERNANDO",
+"t": 9.771,
+"d": 0.287
+},
+{
+"w": "el",
+"who": "FERNANDO",
+"t": 10.071,
+"d": 0.075
+},
+{
+"w": "cuerpo",
+"who": "FERNANDO",
+"t": 10.158,
+"d": 0.45
+},
+{
+"w": "El",
+"who": "SANTIAGO",
+"t": 11.182,
+"d": 0.197
+},
+{
+"w": "avance",
+"who": "SANTIAGO",
+"t": 11.298,
+"d": 0.382
+},
+{
+"w": "más",
+"who": "SANTIAGO",
+"t": 11.693,
+"d": 0.25
+},
+{
+"w": "poderoso",
+"who": "SANTIAGO",
+"t": 11.956,
+"d": 0.513
+},
+{
+"w": "de",
+"who": "SANTIAGO",
+"t": 12.483,
+"d": 0.092
+},
+{
+"w": "nuestra",
+"who": "SANTIAGO",
+"t": 12.588,
+"d": 0.408
+},
+{
+"w": "era",
+"who": "SANTIAGO",
+"t": 13.009,
+"d": 0.171
+},
+{
+"w": "son",
+"who": "SANTIAGO",
+"t": 13.193,
+"d": 0.237
+},
+{
+"w": "los",
+"who": "SANTIAGO",
+"t": 13.443,
+"d": 0.171
+},
+{
+"w": "A",
+"who": "SANTIAGO",
+"t": 13.627,
+"d": 0.053
+},
+{
+"w": "D",
+"who": "SANTIAGO",
+"t": 13.693,
+"d": 0.118
+},
+{
+"w": "C",
+"who": "SANTIAGO",
+"t": 13.825,
+"d": 0.289
+},
+{
+"w": "o",
+"who": "SANTIAGO",
+"t": 14.338,
+"d": 0.079
+},
+{
+"w": "Conjugados",
+"who": "SANTIAGO",
+"t": 14.43,
+"d": 0.684
+},
+{
+"w": "Anticuerpo-Fármaco",
+"who": "SANTIAGO",
+"t": 15.127,
+"d": 1.197
+},
+{
+"w": "Son",
+"who": "SANTIAGO",
+"t": 17.235,
+"d": 0.421
+},
+{
+"w": "literalmente",
+"who": "SANTIAGO",
+"t": 18.012,
+"d": 0.855
+},
+{
+"w": "un",
+"who": "SANTIAGO",
+"t": 19.183,
+"d": 0.105
+},
+{
+"w": "caballo",
+"who": "SANTIAGO",
+"t": 19.301,
+"d": 0.434
+},
+{
+"w": "de",
+"who": "SANTIAGO",
+"t": 19.748,
+"d": 0.132
+},
+{
+"w": "Troya",
+"who": "SANTIAGO",
+"t": 19.893,
+"d": 0.342
+},
+{
+"w": "molecular",
+"who": "SANTIAGO",
+"t": 20.248,
+"d": 0.711
+},
+{
+"w": "Diseñamos",
+"who": "SANTIAGO",
+"t": 21.506,
+"d": 0.697
+},
+{
+"w": "anticuerpos",
+"who": "SANTIAGO",
+"t": 22.128,
+"d": 0.671
+},
+{
+"w": "en",
+"who": "SANTIAGO",
+"t": 22.813,
+"d": 0.092
+},
+{
+"w": "laboratorio",
+"who": "SANTIAGO",
+"t": 22.918,
+"d": 0.684
+},
+{
+"w": "que",
+"who": "SANTIAGO",
+"t": 23.615,
+"d": 0.132
+},
+{
+"w": "rastrean",
+"who": "SANTIAGO",
+"t": 23.76,
+"d": 0.513
+},
+{
+"w": "únicamente",
+"who": "SANTIAGO",
+"t": 24.286,
+"d": 0.658
+},
+{
+"w": "las",
+"who": "SANTIAGO",
+"t": 24.957,
+"d": 0.158
+},
+{
+"w": "proteínas",
+"who": "SANTIAGO",
+"t": 25.128,
+"d": 0.618
+},
+{
+"w": "que",
+"who": "SANTIAGO",
+"t": 25.76,
+"d": 0.145
+},
+{
+"w": "cubren",
+"who": "SANTIAGO",
+"t": 25.918,
+"d": 0.382
+},
+{
+"w": "al",
+"who": "SANTIAGO",
+"t": 26.313,
+"d": 0.118
+},
+{
+"w": "tumor",
+"who": "SANTIAGO",
+"t": 26.444,
+"d": 0.382
+},
+{
+"w": "como",
+"who": "SANTIAGO",
+"t": 27.115,
+"d": 0.237
+},
+{
+"w": "la",
+"who": "SANTIAGO",
+"t": 27.365,
+"d": 0.105
+},
+{
+"w": "HER",
+"who": "SANTIAGO",
+"t": 27.484,
+"d": 0.25
+},
+{
+"w": "dos",
+"who": "SANTIAGO",
+"t": 27.747,
+"d": 0.276
+},
+{
+"w": "o",
+"who": "SANTIAGO",
+"t": 28.036,
+"d": 0.053
+},
+{
+"w": "la",
+"who": "SANTIAGO",
+"t": 28.102,
+"d": 0.105
+},
+{
+"w": "TROP",
+"who": "SANTIAGO",
+"t": 28.22,
+"d": 0.237
+},
+{
+"w": "dos",
+"who": "SANTIAGO",
+"t": 28.47,
+"d": 0.316
+},
+{
+"w": "en",
+"who": "SANTIAGO",
+"t": 28.997,
+"d": 0.145
+},
+{
+"w": "el",
+"who": "SANTIAGO",
+"t": 29.155,
+"d": 0.118
+},
+{
+"w": "agresivo",
+"who": "SANTIAGO",
+"t": 29.286,
+"d": 0.553
+},
+{
+"w": "cáncer",
+"who": "SANTIAGO",
+"t": 29.852,
+"d": 0.487
+},
+{
+"w": "Triple",
+"who": "SANTIAGO",
+"t": 30.352,
+"d": 0.355
+},
+{
+"w": "Negativo",
+"who": "SANTIAGO",
+"t": 30.72,
+"d": 0.671
+},
+{
+"w": "El",
+"who": "SANTIAGO",
+"t": 32.302,
+"d": 0.211
+},
+{
+"w": "anticuerpo",
+"who": "SANTIAGO",
+"t": 32.526,
+"d": 0.605
+},
+{
+"w": "se",
+"who": "SANTIAGO",
+"t": 33.144,
+"d": 0.171
+},
+{
+"w": "ancla",
+"who": "SANTIAGO",
+"t": 33.328,
+"d": 0.355
+},
+{
+"w": "a",
+"who": "SANTIAGO",
+"t": 33.697,
+"d": 0.026
+},
+{
+"w": "la",
+"who": "SANTIAGO",
+"t": 33.736,
+"d": 0.118
+},
+{
+"w": "célula",
+"who": "SANTIAGO",
+"t": 33.868,
+"d": 0.434
+},
+{
+"w": "enferma",
+"who": "SANTIAGO",
+"t": 34.315,
+"d": 0.513
+},
+{
+"w": "penetra",
+"who": "SANTIAGO",
+"t": 35.131,
+"d": 0.434
+},
+{
+"w": "sus",
+"who": "SANTIAGO",
+"t": 35.578,
+"d": 0.211
+},
+{
+"w": "defensas",
+"who": "SANTIAGO",
+"t": 35.802,
+"d": 0.605
+},
+{
+"w": "y",
+"who": "SANTIAGO",
+"t": 36.657,
+"d": 0.079
+},
+{
+"w": "libera",
+"who": "SANTIAGO",
+"t": 36.749,
+"d": 0.368
+},
+{
+"w": "la",
+"who": "SANTIAGO",
+"t": 37.131,
+"d": 0.118
+},
+{
+"w": "toxina",
+"who": "SANTIAGO",
+"t": 37.263,
+"d": 0.513
+},
+{
+"w": "quimioterapéutica",
+"who": "SANTIAGO",
+"t": 37.789,
+"d": 1.092
+},
+{
+"w": "solo",
+"who": "SANTIAGO",
+"t": 38.894,
+"d": 0.329
+},
+{
+"w": "en",
+"who": "SANTIAGO",
+"t": 39.236,
+"d": 0.079
+},
+{
+"w": "su",
+"who": "SANTIAGO",
+"t": 39.328,
+"d": 0.105
+},
+{
+"w": "interior",
+"who": "SANTIAGO",
+"t": 39.447,
+"d": 0.618
+},
+{
+"w": "Destrucción",
+"who": "SANTIAGO",
+"t": 40.973,
+"d": 0.658
+},
+{
+"w": "total",
+"who": "SANTIAGO",
+"t": 41.644,
+"d": 0.355
+},
+{
+"w": "del",
+"who": "SANTIAGO",
+"t": 42.013,
+"d": 0.158
+},
+{
+"w": "cáncer",
+"who": "SANTIAGO",
+"t": 42.184,
+"d": 0.5
+},
+{
+"w": "con",
+"who": "SANTIAGO",
+"t": 42.92,
+"d": 0.184
+},
+{
+"w": "mínimo",
+"who": "SANTIAGO",
+"t": 43.118,
+"d": 0.434
+},
+{
+"w": "daño",
+"who": "SANTIAGO",
+"t": 43.565,
+"d": 0.329
+},
+{
+"w": "colateral",
+"who": "SANTIAGO",
+"t": 43.907,
+"d": 0.671
+}
+]

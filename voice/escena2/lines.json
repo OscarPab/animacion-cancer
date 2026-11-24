@@ -1,0 +1,17 @@
+{
+ "end": 28.025,
+ "lines": [
+  {
+   "who": "SANTIAGO",
+   "text": "Para sostener este crecimiento explosivo, el tumor piratea el sistema circulatorio. A esto le llamamos angiogénesis: obliga al cuerpo a crear nuevos vasos sanguíneos, exclusivos para alimentarlo.",
+   "t0": 1.2,
+   "t1": 14.159
+  },
+  {
+   "who": "FERNANDO",
+   "text": "Si no se detiene a tiempo, estas células rompen las barreras del tejido original, viajando por la sangre o el sistema linfático, para colonizar otros órganos. A este proceso invasivo lo conocemos como metástasis.",
+   "t0": 14.759,
+   "t1": 28.025
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "end": 26.598,
+ "lines": [
+  {
+   "who": "EMILIANO",
+   "text": "Nuestra primera línea de defensa siempre ha sido la detección temprana. Hoy, la mastografía salva millones de vidas, utilizando rayos X de baja dosis para encontrar anomalías años antes de que puedan palparse.",
+   "t0": 1.2,
+   "t1": 12.231
+  },
+  {
+   "who": "EMILIANO",
+   "text": "Y cuando hay dudas sobre la densidad de una masa, utilizamos el ultrasonido tradicional. Las ondas de sonido rebotan en los tejidos y nos dibujan un mapa acústico. Así sabemos si enfrentamos un quiste inofensivo, o un tumor sólido que requiere biopsia.",
+   "t0": 12.931,
+   "t1": 26.598
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+node_modules/
+out/
+# audio y video generados: se regeneran con los scripts (ver README)
+*.wav
+*.mp3
+*.mp4
+*.zip
