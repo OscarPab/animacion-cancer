@@ -1,23 +1,23 @@
 {
- "end": 44.57,
+ "end": 50.405,
  "lines": [
   {
-   "who": "FERNANDO",
-   "text": "La detección es solo la mitad de la batalla. Las curas también han dado un salto cuántico, alejándose de la quimioterapia tradicional, que dañaba todo el cuerpo.",
+   "who": "OSCAR",
+   "text": "Pero estamos en 2026, y la tecnología ha evolucionado drásticamente. Primero, la Inteligencia Artificial ya actúa como triage en nuestros hospitales, analizando miles de mastografías en segundos, e identificando patrones invisibles al ojo humano.",
    "t0": 1.0,
-   "t1": 10.582
+   "t1": 15.332
   },
   {
-   "who": "SANTIAGO",
-   "text": "El avance más poderoso de nuestra era son los A D C, o Conjugados Anticuerpo-Fármaco. Son, literalmente, un caballo de Troya molecular.",
-   "t0": 11.182,
-   "t1": 20.906
+   "who": "OSCAR",
+   "text": "Aún más fascinante es el desarrollo de sensores interdisciplinarios, tecnología impulsada por instituciones como la UNAM. Imaginen esto: un biosensor acústico.",
+   "t0": 15.932,
+   "t1": 25.719
   },
   {
-   "who": "SANTIAGO",
-   "text": "Diseñamos anticuerpos en laboratorio que rastrean únicamente las proteínas que cubren al tumor, como la HER dos o la TROP dos, en el agresivo cáncer Triple Negativo. El anticuerpo se ancla a la célula enferma, penetra sus defensas, y libera la toxina quimioterapéutica solo en su interior. Destrucción total del cáncer, con mínimo daño colateral.",
-   "t0": 21.506,
-   "t1": 44.57
+   "who": "OSCAR",
+   "text": "Utilizamos un cristal piezoeléctrico, recubierto con una lámina microscópica de oro puro. El oro permite anclar anticuerpos de manera perfecta. Al hacer vibrar la placa con ultrasonido, cualquier biomarcador de cáncer en la sangre que choque contra ella se adhiere, aumentando la masa del sistema. Ese micro-cambio de peso frena la onda acústica, revelando la presencia de un tumor, ¡con precisión nanométrica!",
+   "t0": 26.319,
+   "t1": 50.405
   }
  ]
 }

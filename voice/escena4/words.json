@@ -1,704 +1,758 @@
 [
 {
-"w": "Pero",
-"who": "OSCAR",
-"t": 1.0,
-"d": 0.2
+"w": "Por",
+"who": "EMILIANO",
+"t": 1.1,
+"d": 0.15
 },
 {
-"w": "estamos",
-"who": "OSCAR",
-"t": 1.105,
-"d": 0.362
-},
-{
-"w": "en",
-"who": "OSCAR",
-"t": 1.468,
+"w": "qué",
+"who": "EMILIANO",
+"t": 1.184,
 "d": 0.062
 },
 {
-"w": "2026",
-"who": "OSCAR",
-"t": 1.58,
-"d": 1.0
+"w": "seguimos",
+"who": "EMILIANO",
+"t": 1.271,
+"d": 0.338
 },
 {
-"w": "y",
-"who": "OSCAR",
-"t": 2.718,
-"d": 0.062
-},
-{
-"w": "la",
-"who": "OSCAR",
-"t": 2.805,
-"d": 0.075
-},
-{
-"w": "tecnología",
-"who": "OSCAR",
-"t": 2.943,
-"d": 0.613
-},
-{
-"w": "ha",
-"who": "OSCAR",
-"t": 3.555,
-"d": 0.05
-},
-{
-"w": "evolucionado",
-"who": "OSCAR",
-"t": 3.668,
-"d": 0.562
-},
-{
-"w": "drásticamente",
-"who": "OSCAR",
-"t": 4.28,
-"d": 0.787
-},
-{
-"w": "Primero",
-"who": "OSCAR",
-"t": 5.993,
-"d": 0.487
-},
-{
-"w": "la",
-"who": "OSCAR",
-"t": 6.73,
-"d": 0.113
-},
-{
-"w": "Inteligencia",
-"who": "OSCAR",
-"t": 6.843,
-"d": 0.6
-},
-{
-"w": "Artificial",
-"who": "OSCAR",
-"t": 7.443,
-"d": 0.613
-},
-{
-"w": "ya",
-"who": "OSCAR",
-"t": 8.068,
-"d": 0.138
-},
-{
-"w": "actúa",
-"who": "OSCAR",
-"t": 8.205,
-"d": 0.362
-},
-{
-"w": "como",
-"who": "OSCAR",
-"t": 8.63,
-"d": 0.188
-},
-{
-"w": "triage",
-"who": "OSCAR",
-"t": 8.893,
-"d": 0.275
-},
-{
-"w": "en",
-"who": "OSCAR",
-"t": 9.168,
-"d": 0.062
-},
-{
-"w": "nuestros",
-"who": "OSCAR",
-"t": 9.243,
+"w": "llegando",
+"who": "EMILIANO",
+"t": 1.634,
 "d": 0.3
 },
 {
-"w": "hospitales",
-"who": "OSCAR",
-"t": 9.543,
-"d": 0.65
+"w": "tarde",
+"who": "EMILIANO",
+"t": 1.996,
+"d": 0.325
 },
 {
-"w": "analizando",
-"who": "OSCAR",
-"t": 10.355,
-"d": 0.562
+"w": "Parte",
+"who": "EMILIANO",
+"t": 3.234,
+"d": 0.3
 },
 {
-"w": "miles",
-"who": "OSCAR",
-"t": 10.955,
-"d": 0.25
-},
-{
-"w": "de",
-"who": "OSCAR",
-"t": 11.218,
-"d": 0.075
-},
-{
-"w": "mastografías",
-"who": "OSCAR",
-"t": 11.318,
-"d": 0.713
-},
-{
-"w": "en",
-"who": "OSCAR",
-"t": 12.03,
-"d": 0.1
-},
-{
-"w": "segundos",
-"who": "OSCAR",
-"t": 12.143,
-"d": 0.562
-},
-{
-"w": "e",
-"who": "OSCAR",
-"t": 12.893,
+"w": "del",
+"who": "EMILIANO",
+"t": 3.534,
 "d": 0.062
 },
 {
-"w": "identificando",
-"who": "OSCAR",
-"t": 12.955,
-"d": 0.688
+"w": "problema",
+"who": "EMILIANO",
+"t": 3.646,
+"d": 0.3
 },
 {
-"w": "patrones",
-"who": "OSCAR",
-"t": 13.705,
+"w": "radica",
+"who": "EMILIANO",
+"t": 3.984,
+"d": 0.375
+},
+{
+"w": "en",
+"who": "EMILIANO",
+"t": 4.359,
+"d": 0.037
+},
+{
+"w": "las",
+"who": "EMILIANO",
+"t": 4.409,
+"d": 0.1
+},
+{
+"w": "limitaciones",
+"who": "EMILIANO",
+"t": 4.546,
+"d": 0.6
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 5.184,
+"d": 0.062
+},
+{
+"w": "los",
+"who": "EMILIANO",
+"t": 5.271,
+"d": 0.113
+},
+{
+"w": "métodos",
+"who": "EMILIANO",
+"t": 5.434,
+"d": 0.35
+},
+{
+"w": "tradicionales",
+"who": "EMILIANO",
+"t": 5.834,
+"d": 0.825
+},
+{
+"w": "Aunque",
+"who": "EMILIANO",
+"t": 7.559,
+"d": 0.287
+},
+{
+"w": "la",
+"who": "EMILIANO",
+"t": 7.884,
+"d": 0.062
+},
+{
+"w": "mastografía",
+"who": "EMILIANO",
+"t": 7.971,
+"d": 0.6
+},
+{
+"w": "sigue",
+"who": "EMILIANO",
+"t": 8.596,
+"d": 0.212
+},
+{
+"w": "siendo",
+"who": "EMILIANO",
+"t": 8.834,
+"d": 0.275
+},
+{
+"w": "el",
+"who": "EMILIANO",
+"t": 9.109,
+"d": 0.062
+},
+{
+"w": "estudio",
+"who": "EMILIANO",
+"t": 9.184,
+"d": 0.388
+},
+{
+"w": "más",
+"who": "EMILIANO",
+"t": 9.596,
+"d": 0.1
+},
+{
+"w": "difundido",
+"who": "EMILIANO",
+"t": 9.734,
+"d": 0.562
+},
+{
+"w": "emplea",
+"who": "EMILIANO",
+"t": 10.571,
+"d": 0.35
+},
+{
+"w": "rayos",
+"who": "EMILIANO",
+"t": 10.959,
+"d": 0.388
+},
+{
+"w": "X",
+"who": "EMILIANO",
+"t": 11.359,
 "d": 0.425
 },
 {
-"w": "invisibles",
+"w": "radiación",
+"who": "EMILIANO",
+"t": 12.121,
+"d": 0.487
+},
+{
+"w": "ionizante",
+"who": "EMILIANO",
+"t": 12.634,
+"d": 0.475
+},
+{
+"w": "que",
+"who": "EMILIANO",
+"t": 13.171,
+"d": 0.163
+},
+{
+"w": "al",
+"who": "EMILIANO",
+"t": 13.771,
+"d": 0.138
+},
+{
+"w": "acumularse",
+"who": "EMILIANO",
+"t": 13.909,
+"d": 0.562
+},
+{
+"w": "con",
+"who": "EMILIANO",
+"t": 14.521,
+"d": 0.1
+},
+{
+"w": "exposiciones",
+"who": "EMILIANO",
+"t": 14.646,
+"d": 0.625
+},
+{
+"w": "repetidas",
+"who": "EMILIANO",
+"t": 15.321,
+"d": 0.7
+},
+{
+"w": "conlleva",
+"who": "EMILIANO",
+"t": 16.209,
+"d": 0.325
+},
+{
+"w": "el",
+"who": "EMILIANO",
+"t": 16.546,
+"d": 0.037
+},
+{
+"w": "riesgo",
+"who": "EMILIANO",
+"t": 16.609,
+"d": 0.338
+},
+{
+"w": "de",
+"who": "EMILIANO",
+"t": 16.996,
+"d": 0.037
+},
+{
+"w": "provocar",
+"who": "EMILIANO",
+"t": 17.096,
+"d": 0.375
+},
+{
+"w": "alteraciones",
+"who": "EMILIANO",
+"t": 17.471,
+"d": 0.6
+},
+{
+"w": "celulares",
+"who": "EMILIANO",
+"t": 18.071,
+"d": 0.562
+},
+{
+"w": "en",
+"who": "EMILIANO",
+"t": 18.634,
+"d": 0.062
+},
+{
+"w": "el",
+"who": "EMILIANO",
+"t": 18.721,
+"d": 0.1
+},
+{
+"w": "tejido",
+"who": "EMILIANO",
+"t": 18.871,
+"d": 0.312
+},
+{
+"w": "sano",
+"who": "EMILIANO",
+"t": 19.209,
+"d": 0.312
+},
+{
+"w": "Además",
+"who": "EMILIANO",
+"t": 20.434,
+"d": 0.562
+},
+{
+"w": "implica",
+"who": "EMILIANO",
+"t": 21.171,
+"d": 0.362
+},
+{
+"w": "compresión",
+"who": "EMILIANO",
+"t": 21.596,
+"d": 0.438
+},
+{
+"w": "dolorosa",
+"who": "EMILIANO",
+"t": 22.084,
+"d": 0.5
+},
+{
+"w": "y",
+"who": "EMILIANO",
+"t": 22.634,
+"d": 0.075
+},
+{
+"w": "pierde",
+"who": "EMILIANO",
+"t": 22.784,
+"d": 0.225
+},
+{
+"w": "efectividad",
+"who": "EMILIANO",
+"t": 23.009,
+"d": 0.6
+},
+{
+"w": "en",
+"who": "EMILIANO",
+"t": 23.646,
+"d": 0.125
+},
+{
+"w": "mamas",
+"who": "EMILIANO",
+"t": 23.821,
+"d": 0.237
+},
+{
+"w": "densas",
+"who": "EMILIANO",
+"t": 24.096,
+"d": 0.525
+},
+{
+"w": "muy",
+"who": "EMILIANO",
+"t": 24.846,
+"d": 0.15
+},
+{
+"w": "comunes",
+"who": "EMILIANO",
+"t": 25.046,
+"d": 0.362
+},
+{
+"w": "en",
+"who": "EMILIANO",
+"t": 25.409,
+"d": 0.062
+},
+{
+"w": "mujeres",
+"who": "EMILIANO",
+"t": 25.471,
+"d": 0.35
+},
+{
+"w": "jóvenes",
+"who": "EMILIANO",
+"t": 25.846,
+"d": 0.463
+},
+{
+"w": "Por",
 "who": "OSCAR",
-"t": 14.143,
-"d": 0.55
+"t": 26.979,
+"d": 0.175
+},
+{
+"w": "eso",
+"who": "OSCAR",
+"t": 27.041,
+"d": 0.225
+},
+{
+"w": "hoy",
+"who": "OSCAR",
+"t": 27.279,
+"d": 0.15
+},
+{
+"w": "destacamos",
+"who": "OSCAR",
+"t": 27.466,
+"d": 0.562
 },
 {
 "w": "al",
 "who": "OSCAR",
-"t": 14.693,
-"d": 0.087
+"t": 28.029,
+"d": 0.062
 },
 {
-"w": "ojo",
+"w": "ultrasonido",
 "who": "OSCAR",
-"t": 14.793,
-"d": 0.163
+"t": 28.116,
+"d": 0.562
 },
 {
-"w": "humano",
+"w": "mamario",
 "who": "OSCAR",
-"t": 14.955,
-"d": 0.338
+"t": 28.716,
+"d": 0.388
 },
 {
-"w": "Aún",
+"w": "como",
 "who": "OSCAR",
-"t": 15.932,
-"d": 0.275
-},
-{
-"w": "más",
-"who": "OSCAR",
-"t": 16.141,
-"d": 0.212
-},
-{
-"w": "fascinante",
-"who": "OSCAR",
-"t": 16.379,
-"d": 0.662
-},
-{
-"w": "es",
-"who": "OSCAR",
-"t": 17.116,
-"d": 0.15
+"t": 29.166,
+"d": 0.188
 },
 {
 "w": "el",
 "who": "OSCAR",
-"t": 17.266,
-"d": 0.062
+"t": 29.354,
+"d": 0.05
 },
 {
-"w": "desarrollo",
+"w": "mejor",
 "who": "OSCAR",
-"t": 17.379,
+"t": 29.429,
+"d": 0.263
+},
+{
+"w": "método",
+"who": "OSCAR",
+"t": 29.729,
+"d": 0.312
+},
+{
+"w": "actual",
+"who": "OSCAR",
+"t": 30.041,
+"d": 0.3
+},
+{
+"w": "menos",
+"who": "OSCAR",
+"t": 30.366,
+"d": 0.287
+},
+{
+"w": "invasivo",
+"who": "OSCAR",
+"t": 30.679,
+"d": 0.55
+},
+{
+"w": "A",
+"who": "OSCAR",
+"t": 32.141,
+"d": 0.138
+},
+{
+"w": "diferencia",
+"who": "OSCAR",
+"t": 32.316,
 "d": 0.525
 },
 {
 "w": "de",
 "who": "OSCAR",
-"t": 17.929,
-"d": 0.087
+"t": 32.879,
+"d": 0.062
 },
 {
-"w": "sensores",
+"w": "la",
 "who": "OSCAR",
-"t": 18.029,
+"t": 32.966,
+"d": 0.075
+},
+{
+"w": "mastografía",
+"who": "OSCAR",
+"t": 33.066,
+"d": 0.762
+},
+{
+"w": "no",
+"who": "OSCAR",
+"t": 34.091,
+"d": 0.138
+},
+{
+"w": "utiliza",
+"who": "OSCAR",
+"t": 34.241,
+"d": 0.45
+},
+{
+"w": "radiación",
+"who": "OSCAR",
+"t": 34.716,
 "d": 0.475
 },
 {
-"w": "interdisciplinarios",
+"w": "ionizante",
 "who": "OSCAR",
-"t": 18.529,
-"d": 1.062
+"t": 35.241,
+"d": 0.463
 },
 {
-"w": "tecnología",
+"w": "ni",
 "who": "OSCAR",
-"t": 19.854,
-"d": 0.6
+"t": 35.741,
+"d": 0.062
 },
 {
-"w": "impulsada",
+"w": "aplasta",
 "who": "OSCAR",
-"t": 20.466,
-"d": 0.512
+"t": 35.829,
+"d": 0.388
+},
+{
+"w": "el",
+"who": "OSCAR",
+"t": 36.216,
+"d": 0.075
+},
+{
+"w": "tejido",
+"who": "OSCAR",
+"t": 36.329,
+"d": 0.463
+},
+{
+"w": "opera",
+"who": "OSCAR",
+"t": 37.091,
+"d": 0.275
+},
+{
+"w": "únicamente",
+"who": "OSCAR",
+"t": 37.404,
+"d": 0.525
+},
+{
+"w": "con",
+"who": "OSCAR",
+"t": 37.991,
+"d": 0.125
+},
+{
+"w": "ondas",
+"who": "OSCAR",
+"t": 38.141,
+"d": 0.225
+},
+{
+"w": "mecánicas",
+"who": "OSCAR",
+"t": 38.404,
+"d": 0.5
+},
+{
+"w": "de",
+"who": "OSCAR",
+"t": 38.929,
+"d": 0.075
+},
+{
+"w": "sonido",
+"who": "OSCAR",
+"t": 39.029,
+"d": 0.338
+},
+{
+"w": "de",
+"who": "OSCAR",
+"t": 39.404,
+"d": 0.087
+},
+{
+"w": "alta",
+"who": "OSCAR",
+"t": 39.491,
+"d": 0.237
+},
+{
+"w": "frecuencia",
+"who": "OSCAR",
+"t": 39.754,
+"d": 0.588
+},
+{
+"w": "Permite",
+"who": "OSCAR",
+"t": 41.266,
+"d": 0.412
+},
+{
+"w": "revisar",
+"who": "OSCAR",
+"t": 41.716,
+"d": 0.4
+},
+{
+"w": "tejido",
+"who": "OSCAR",
+"t": 42.191,
+"d": 0.35
+},
+{
+"w": "denso",
+"who": "OSCAR",
+"t": 42.579,
+"d": 0.287
+},
+{
+"w": "con",
+"who": "OSCAR",
+"t": 42.916,
+"d": 0.138
+},
+{
+"w": "seguridad",
+"who": "OSCAR",
+"t": 43.054,
+"d": 0.562
+},
+{
+"w": "repetirse",
+"who": "OSCAR",
+"t": 43.841,
+"d": 0.588
+},
+{
+"w": "sin",
+"who": "OSCAR",
+"t": 44.454,
+"d": 0.2
+},
+{
+"w": "riesgo",
+"who": "OSCAR",
+"t": 44.691,
+"d": 0.3
+},
+{
+"w": "acumulativo",
+"who": "OSCAR",
+"t": 44.991,
+"d": 0.637
 },
 {
 "w": "por",
 "who": "OSCAR",
-"t": 21.054,
-"d": 0.1
+"t": 45.704,
+"d": 0.087
 },
 {
-"w": "instituciones",
+"w": "radiación",
 "who": "OSCAR",
-"t": 21.154,
-"d": 0.613
-},
-{
-"w": "como",
-"who": "OSCAR",
-"t": 21.816,
-"d": 0.175
-},
-{
-"w": "la",
-"who": "OSCAR",
-"t": 22.016,
-"d": 0.05
-},
-{
-"w": "UNAM",
-"who": "OSCAR",
-"t": 22.104,
-"d": 0.287
-},
-{
-"w": "Imaginen",
-"who": "OSCAR",
-"t": 23.291,
-"d": 0.588
-},
-{
-"w": "esto",
-"who": "OSCAR",
-"t": 23.891,
-"d": 0.338
-},
-{
-"w": "un",
-"who": "OSCAR",
-"t": 24.454,
-"d": 0.113
-},
-{
-"w": "biosensor",
-"who": "OSCAR",
-"t": 24.604,
-"d": 0.475
-},
-{
-"w": "acústico",
-"who": "OSCAR",
-"t": 25.079,
-"d": 0.588
-},
-{
-"w": "Utilizamos",
-"who": "OSCAR",
-"t": 26.319,
-"d": 0.688
-},
-{
-"w": "un",
-"who": "OSCAR",
-"t": 26.928,
-"d": 0.075
-},
-{
-"w": "cristal",
-"who": "OSCAR",
-"t": 27.053,
-"d": 0.325
-},
-{
-"w": "piezoeléctrico",
-"who": "OSCAR",
-"t": 27.453,
-"d": 0.762
-},
-{
-"w": "recubierto",
-"who": "OSCAR",
-"t": 28.578,
+"t": 45.816,
 "d": 0.55
 },
 {
-"w": "con",
+"w": "y",
 "who": "OSCAR",
-"t": 29.191,
-"d": 0.113
-},
-{
-"w": "una",
-"who": "OSCAR",
-"t": 29.328,
-"d": 0.163
-},
-{
-"w": "lámina",
-"who": "OSCAR",
-"t": 29.516,
-"d": 0.312
-},
-{
-"w": "microscópica",
-"who": "OSCAR",
-"t": 29.853,
-"d": 0.713
-},
-{
-"w": "de",
-"who": "OSCAR",
-"t": 30.603,
+"t": 46.416,
 "d": 0.087
 },
 {
-"w": "oro",
+"w": "distinguir",
 "who": "OSCAR",
-"t": 30.728,
-"d": 0.15
-},
-{
-"w": "puro",
-"who": "OSCAR",
-"t": 30.966,
-"d": 0.263
-},
-{
-"w": "El",
-"who": "OSCAR",
-"t": 32.153,
-"d": 0.175
-},
-{
-"w": "oro",
-"who": "OSCAR",
-"t": 32.353,
-"d": 0.15
-},
-{
-"w": "permite",
-"who": "OSCAR",
-"t": 32.578,
-"d": 0.35
-},
-{
-"w": "anclar",
-"who": "OSCAR",
-"t": 32.941,
-"d": 0.325
-},
-{
-"w": "anticuerpos",
-"who": "OSCAR",
-"t": 33.278,
-"d": 0.588
-},
-{
-"w": "de",
-"who": "OSCAR",
-"t": 33.903,
-"d": 0.062
-},
-{
-"w": "manera",
-"who": "OSCAR",
-"t": 33.991,
-"d": 0.3
-},
-{
-"w": "perfecta",
-"who": "OSCAR",
-"t": 34.353,
-"d": 0.512
-},
-{
-"w": "Al",
-"who": "OSCAR",
-"t": 35.803,
-"d": 0.163
-},
-{
-"w": "hacer",
-"who": "OSCAR",
-"t": 35.978,
-"d": 0.25
-},
-{
-"w": "vibrar",
-"who": "OSCAR",
-"t": 36.253,
-"d": 0.287
-},
-{
-"w": "la",
-"who": "OSCAR",
-"t": 36.541,
-"d": 0.125
-},
-{
-"w": "placa",
-"who": "OSCAR",
-"t": 36.753,
-"d": 0.225
-},
-{
-"w": "con",
-"who": "OSCAR",
-"t": 37.041,
-"d": 0.1
-},
-{
-"w": "ultrasonido",
-"who": "OSCAR",
-"t": 37.166,
-"d": 0.688
-},
-{
-"w": "cualquier",
-"who": "OSCAR",
-"t": 38.128,
-"d": 0.325
-},
-{
-"w": "biomarcador",
-"who": "OSCAR",
-"t": 38.478,
-"d": 0.55
-},
-{
-"w": "de",
-"who": "OSCAR",
-"t": 39.066,
-"d": 0.087
-},
-{
-"w": "cáncer",
-"who": "OSCAR",
-"t": 39.216,
-"d": 0.338
-},
-{
-"w": "en",
-"who": "OSCAR",
-"t": 39.553,
-"d": 0.087
-},
-{
-"w": "la",
-"who": "OSCAR",
-"t": 39.641,
-"d": 0.125
-},
-{
-"w": "sangre",
-"who": "OSCAR",
-"t": 39.791,
-"d": 0.338
-},
-{
-"w": "que",
-"who": "OSCAR",
-"t": 40.191,
-"d": 0.075
-},
-{
-"w": "choque",
-"who": "OSCAR",
-"t": 40.316,
-"d": 0.237
-},
-{
-"w": "contra",
-"who": "OSCAR",
-"t": 40.603,
-"d": 0.287
-},
-{
-"w": "ella",
-"who": "OSCAR",
-"t": 40.941,
-"d": 0.175
-},
-{
-"w": "se",
-"who": "OSCAR",
-"t": 41.141,
-"d": 0.1
-},
-{
-"w": "adhiere",
-"who": "OSCAR",
-"t": 41.241,
-"d": 0.375
-},
-{
-"w": "aumentando",
-"who": "OSCAR",
-"t": 41.841,
-"d": 0.512
-},
-{
-"w": "la",
-"who": "OSCAR",
-"t": 42.391,
-"d": 0.075
-},
-{
-"w": "masa",
-"who": "OSCAR",
-"t": 42.491,
-"d": 0.225
-},
-{
-"w": "del",
-"who": "OSCAR",
-"t": 42.741,
-"d": 0.125
-},
-{
-"w": "sistema",
-"who": "OSCAR",
-"t": 42.878,
+"t": 46.541,
 "d": 0.45
 },
 {
-"w": "Ese",
+"w": "con",
 "who": "OSCAR",
-"t": 44.253,
-"d": 0.275
+"t": 47.029,
+"d": 0.15
 },
 {
-"w": "micro-cambio",
-"who": "OSCAR",
-"t": 44.566,
-"d": 0.575
-},
-{
-"w": "de",
-"who": "OSCAR",
-"t": 45.166,
-"d": 0.087
-},
-{
-"w": "peso",
-"who": "OSCAR",
-"t": 45.328,
-"d": 0.237
-},
-{
-"w": "frena",
-"who": "OSCAR",
-"t": 45.591,
-"d": 0.287
-},
-{
-"w": "la",
-"who": "OSCAR",
-"t": 45.903,
-"d": 0.075
-},
-{
-"w": "onda",
-"who": "OSCAR",
-"t": 46.041,
-"d": 0.175
-},
-{
-"w": "acústica",
-"who": "OSCAR",
-"t": 46.216,
-"d": 0.637
-},
-{
-"w": "revelando",
+"w": "claridad",
 "who": "OSCAR",
 "t": 47.216,
-"d": 0.463
-},
-{
-"w": "la",
-"who": "OSCAR",
-"t": 47.716,
-"d": 0.075
-},
-{
-"w": "presencia",
-"who": "OSCAR",
-"t": 47.853,
 "d": 0.425
 },
 {
-"w": "de",
+"w": "entre",
 "who": "OSCAR",
-"t": 48.316,
-"d": 0.062
+"t": 47.654,
+"d": 0.15
 },
 {
 "w": "un",
 "who": "OSCAR",
-"t": 48.403,
+"t": 47.804,
+"d": 0.125
+},
+{
+"w": "quiste",
+"who": "OSCAR",
+"t": 47.954,
+"d": 0.287
+},
+{
+"w": "líquido",
+"who": "OSCAR",
+"t": 48.266,
+"d": 0.362
+},
+{
+"w": "y",
+"who": "OSCAR",
+"t": 48.666,
+"d": 0.075
+},
+{
+"w": "un",
+"who": "OSCAR",
+"t": 48.766,
 "d": 0.138
 },
 {
 "w": "tumor",
 "who": "OSCAR",
-"t": 48.541,
-"d": 0.312
+"t": 48.904,
+"d": 0.225
 },
 {
-"w": "con",
+"w": "sólido",
 "who": "OSCAR",
-"t": 49.103,
-"d": 0.163
+"t": 49.154,
+"d": 0.375
 },
 {
-"w": "precisión",
+"w": "que",
 "who": "OSCAR",
-"t": 49.291,
-"d": 0.4
+"t": 49.591,
+"d": 0.062
 },
 {
-"w": "nanométrica",
+"w": "amerite",
 "who": "OSCAR",
-"t": 49.703,
-"d": 0.662
+"t": 49.654,
+"d": 0.388
+},
+{
+"w": "biopsia",
+"who": "OSCAR",
+"t": 50.066,
+"d": 0.438
 }
 ]

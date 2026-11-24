@@ -1,17 +1,23 @@
 {
- "end": 26.598,
+ "end": 58.5,
  "lines": [
   {
-   "who": "EMILIANO",
-   "text": "Nuestra primera línea de defensa siempre ha sido la detección temprana. Hoy, la mastografía salva millones de vidas, utilizando rayos X de baja dosis para encontrar anomalías años antes de que puedan palparse.",
-   "t0": 1.2,
-   "t1": 12.231
+   "who": "FERNANDO",
+   "text": "Esto no es una estadística lejana ni un problema resuelto. Hoy, en México, el cáncer de mama sigue siendo la primera causa de muerte por tumores malignos en mujeres.",
+   "t0": 1.6,
+   "t1": 12.175
   },
   {
    "who": "EMILIANO",
-   "text": "Y cuando hay dudas sobre la densidad de una masa, utilizamos el ultrasonido tradicional. Las ondas de sonido rebotan en los tejidos y nos dibujan un mapa acústico. Así sabemos si enfrentamos un quiste inofensivo, o un tumor sólido que requiere biopsia.",
-   "t0": 12.931,
-   "t1": 26.598
+   "text": "Las cifras oficiales del INEGI son contundentes: tan solo en dos mil veinticuatro fallecieron ocho mil cuatrocientas cincuenta y una personas por esta enfermedad en el país, de las cuales ocho mil trescientas ochenta y cuatro fueron mujeres. En dos mil veinticinco la cifra se mantuvo por encima de las ocho mil cien muertes. Eso significa que, en promedio, casi veintitrés mujeres mueren cada día en México por cáncer de mama.",
+   "t0": 12.925,
+   "t1": 35.718
+  },
+  {
+   "who": "SANTIAGO",
+   "text": "Y lejos de bajar, el problema ha crecido: en la última década la tasa de mortalidad pasó de quince punto siete a dieciocho punto siete defunciones por cada cien mil mujeres. Se estiman más de treinta y cuatro mil casos nuevos al año, y entre el sesenta y cuatro y el setenta y dos por ciento se diagnostican cuando la enfermedad ya está en etapas avanzadas.",
+   "t0": 36.468,
+   "t1": 58.5
   }
  ]
 }

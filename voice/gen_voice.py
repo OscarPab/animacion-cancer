@@ -23,25 +23,31 @@ SCENES = {
         ("SANTIAGO", "Para sostener este crecimiento explosivo, el tumor piratea el sistema circulatorio. A esto le llamamos angiogénesis: obliga al cuerpo a crear nuevos vasos sanguíneos, exclusivos para alimentarlo."),
         ("FERNANDO", "Si no se detiene a tiempo, estas células rompen las barreras del tejido original, viajando por la sangre o el sistema linfático, para colonizar otros órganos. A este proceso invasivo lo conocemos como metástasis."),
     ]},
-    "escena3": {"start": 1.2, "gap": 0.7, "lines": [
-        ("EMILIANO", "Nuestra primera línea de defensa siempre ha sido la detección temprana. Hoy, la mastografía salva millones de vidas, utilizando rayos X de baja dosis para encontrar anomalías años antes de que puedan palparse."),
-        ("EMILIANO", "Y cuando hay dudas sobre la densidad de una masa, utilizamos el ultrasonido tradicional. Las ondas de sonido rebotan en los tejidos y nos dibujan un mapa acústico. Así sabemos si enfrentamos un quiste inofensivo, o un tumor sólido que requiere biopsia."),
+    "escena3": {"start": 1.6, "gap": 0.75, "lines": [
+        ("FERNANDO", "Esto no es una estadística lejana ni un problema resuelto. Hoy, en México, el cáncer de mama sigue siendo la primera causa de muerte por tumores malignos en mujeres."),
+        ("EMILIANO", "Las cifras oficiales del INEGI son contundentes: tan solo en dos mil veinticuatro fallecieron ocho mil cuatrocientas cincuenta y una personas por esta enfermedad en el país, de las cuales ocho mil trescientas ochenta y cuatro fueron mujeres. En dos mil veinticinco la cifra se mantuvo por encima de las ocho mil cien muertes. Eso significa que, en promedio, casi veintitrés mujeres mueren cada día en México por cáncer de mama."),
+        ("SANTIAGO", "Y lejos de bajar, el problema ha crecido: en la última década la tasa de mortalidad pasó de quince punto siete a dieciocho punto siete defunciones por cada cien mil mujeres. Se estiman más de treinta y cuatro mil casos nuevos al año, y entre el sesenta y cuatro y el setenta y dos por ciento se diagnostican cuando la enfermedad ya está en etapas avanzadas."),
     ]},
-    "escena4": {"start": 1.0, "gap": 0.6, "lines": [
+    "escena4": {"start": 1.1, "gap": 0.65, "lines": [
+        ("EMILIANO", "¿Por qué seguimos llegando tarde? Parte del problema radica en las limitaciones de los métodos tradicionales. Aunque la mastografía sigue siendo el estudio más difundido, emplea rayos X: radiación ionizante que, al acumularse con exposiciones repetidas, conlleva el riesgo de provocar alteraciones celulares en el tejido sano. Además, implica compresión dolorosa y pierde efectividad en mamas densas, muy comunes en mujeres jóvenes."),
+        ("OSCAR", "Por eso hoy destacamos al ultrasonido mamario como el mejor método actual menos invasivo. A diferencia de la mastografía, no utiliza radiación ionizante ni aplasta el tejido; opera únicamente con ondas mecánicas de sonido de alta frecuencia. Permite revisar tejido denso con seguridad, repetirse sin riesgo acumulativo por radiación y distinguir con claridad entre un quiste líquido y un tumor sólido que amerite biopsia."),
+    ]},
+    # Escenas 5 y 6: el PDF repite el número «Escena 5» y pega el bloque de mastografía de la v1 bajo el título de IA.
+    # El relato que se anima empareja cada título con su diálogo: IA y biosensor, luego ADC.
+    "escena5": {"start": 1.0, "gap": 0.6, "lines": [
         ("OSCAR", "Pero estamos en 2026, y la tecnología ha evolucionado drásticamente. Primero, la Inteligencia Artificial ya actúa como triage en nuestros hospitales, analizando miles de mastografías en segundos, e identificando patrones invisibles al ojo humano."),
         ("OSCAR", "Aún más fascinante es el desarrollo de sensores interdisciplinarios, tecnología impulsada por instituciones como la UNAM. Imaginen esto: un biosensor acústico."),
         ("OSCAR", "Utilizamos un cristal piezoeléctrico, recubierto con una lámina microscópica de oro puro. El oro permite anclar anticuerpos de manera perfecta. Al hacer vibrar la placa con ultrasonido, cualquier biomarcador de cáncer en la sangre que choque contra ella se adhiere, aumentando la masa del sistema. Ese micro-cambio de peso frena la onda acústica, revelando la presencia de un tumor, ¡con precisión nanométrica!"),
     ]},
-    "escena5": {"start": 1.0, "gap": 0.6, "lines": [
+    "escena6": {"start": 1.0, "gap": 0.6, "lines": [
         ("FERNANDO", "La detección es solo la mitad de la batalla. Las curas también han dado un salto cuántico, alejándose de la quimioterapia tradicional, que dañaba todo el cuerpo."),
         ("SANTIAGO", "El avance más poderoso de nuestra era son los A D C, o Conjugados Anticuerpo-Fármaco. Son, literalmente, un caballo de Troya molecular."),
         ("SANTIAGO", "Diseñamos anticuerpos en laboratorio que rastrean únicamente las proteínas que cubren al tumor, como la HER dos o la TROP dos, en el agresivo cáncer Triple Negativo. El anticuerpo se ancla a la célula enferma, penetra sus defensas, y libera la toxina quimioterapéutica solo en su interior. Destrucción total del cáncer, con mínimo daño colateral."),
     ]},
-    "escena6": {"start": 1.2, "gap": 0.55, "lines": [
-        ("EMILIANO", "Vencer al cáncer de mama ya no es un sueño aislado de los médicos."),
-        ("OSCAR", "Hoy, la física de materiales, la acústica de superficies, la inteligencia artificial y la biotecnología trabajan en perfecta sincronía."),
-        ("FERNANDO", "La ciencia está convirtiendo una de las enfermedades más temidas de la historia en un padecimiento detectable, tratable, y cada vez más, curable."),
-        ("SANTIAGO", "La investigación salva vidas. Y el futuro, finalmente, está a nuestro favor."),
+    # El PDF se corta en «la biotecnología tienen». La segunda línea cierra esa frase con el título de la escena.
+    "escena7": {"start": 1.3, "gap": 0.7, "lines": [
+        ("FERNANDO", "Sería irresponsable decir que la batalla está ganada. Los avances existen, pero miles de mujeres mexicanas siguen muriendo cada año porque el diagnóstico llega tarde, o porque las tecnologías de punta aún no están al alcance de todas."),
+        ("OSCAR", "Ahí es donde la física, la acústica y la biotecnología tienen que salir del laboratorio y llegar a cada clínica. Mientras el diagnóstico llegue tarde, esta lucha sigue abierta."),
     ]},
 }
 SR = 48000

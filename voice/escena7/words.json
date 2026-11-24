@@ -1,0 +1,404 @@
+[
+{
+"w": "Sería",
+"who": "FERNANDO",
+"t": 1.3,
+"d": 0.425
+},
+{
+"w": "irresponsable",
+"who": "FERNANDO",
+"t": 1.646,
+"d": 0.738
+},
+{
+"w": "decir",
+"who": "FERNANDO",
+"t": 2.396,
+"d": 0.362
+},
+{
+"w": "que",
+"who": "FERNANDO",
+"t": 2.771,
+"d": 0.125
+},
+{
+"w": "la",
+"who": "FERNANDO",
+"t": 2.909,
+"d": 0.087
+},
+{
+"w": "batalla",
+"who": "FERNANDO",
+"t": 3.009,
+"d": 0.412
+},
+{
+"w": "está",
+"who": "FERNANDO",
+"t": 3.434,
+"d": 0.25
+},
+{
+"w": "ganada",
+"who": "FERNANDO",
+"t": 3.696,
+"d": 0.5
+},
+{
+"w": "Los",
+"who": "FERNANDO",
+"t": 5.059,
+"d": 0.225
+},
+{
+"w": "avances",
+"who": "FERNANDO",
+"t": 5.296,
+"d": 0.438
+},
+{
+"w": "existen",
+"who": "FERNANDO",
+"t": 5.746,
+"d": 0.55
+},
+{
+"w": "pero",
+"who": "FERNANDO",
+"t": 6.596,
+"d": 0.2
+},
+{
+"w": "miles",
+"who": "FERNANDO",
+"t": 6.809,
+"d": 0.338
+},
+{
+"w": "de",
+"who": "FERNANDO",
+"t": 7.159,
+"d": 0.062
+},
+{
+"w": "mujeres",
+"who": "FERNANDO",
+"t": 7.234,
+"d": 0.463
+},
+{
+"w": "mexicanas",
+"who": "FERNANDO",
+"t": 7.709,
+"d": 0.562
+},
+{
+"w": "siguen",
+"who": "FERNANDO",
+"t": 8.284,
+"d": 0.312
+},
+{
+"w": "muriendo",
+"who": "FERNANDO",
+"t": 8.609,
+"d": 0.463
+},
+{
+"w": "cada",
+"who": "FERNANDO",
+"t": 9.084,
+"d": 0.338
+},
+{
+"w": "año",
+"who": "FERNANDO",
+"t": 9.434,
+"d": 0.237
+},
+{
+"w": "porque",
+"who": "FERNANDO",
+"t": 9.684,
+"d": 0.312
+},
+{
+"w": "el",
+"who": "FERNANDO",
+"t": 10.009,
+"d": 0.1
+},
+{
+"w": "diagnóstico",
+"who": "FERNANDO",
+"t": 10.121,
+"d": 0.662
+},
+{
+"w": "llega",
+"who": "FERNANDO",
+"t": 10.796,
+"d": 0.3
+},
+{
+"w": "tarde",
+"who": "FERNANDO",
+"t": 11.109,
+"d": 0.388
+},
+{
+"w": "o",
+"who": "FERNANDO",
+"t": 11.759,
+"d": 0.075
+},
+{
+"w": "porque",
+"who": "FERNANDO",
+"t": 11.846,
+"d": 0.312
+},
+{
+"w": "las",
+"who": "FERNANDO",
+"t": 12.171,
+"d": 0.15
+},
+{
+"w": "tecnologías",
+"who": "FERNANDO",
+"t": 12.334,
+"d": 0.725
+},
+{
+"w": "de",
+"who": "FERNANDO",
+"t": 13.071,
+"d": 0.1
+},
+{
+"w": "punta",
+"who": "FERNANDO",
+"t": 13.184,
+"d": 0.4
+},
+{
+"w": "aún",
+"who": "FERNANDO",
+"t": 13.596,
+"d": 0.287
+},
+{
+"w": "no",
+"who": "FERNANDO",
+"t": 13.896,
+"d": 0.087
+},
+{
+"w": "están",
+"who": "FERNANDO",
+"t": 13.996,
+"d": 0.325
+},
+{
+"w": "al",
+"who": "FERNANDO",
+"t": 14.334,
+"d": 0.125
+},
+{
+"w": "alcance",
+"who": "FERNANDO",
+"t": 14.471,
+"d": 0.487
+},
+{
+"w": "de",
+"who": "FERNANDO",
+"t": 14.971,
+"d": 0.113
+},
+{
+"w": "todas",
+"who": "FERNANDO",
+"t": 15.096,
+"d": 0.512
+},
+{
+"w": "Ahí",
+"who": "OSCAR",
+"t": 16.293,
+"d": 0.275
+},
+{
+"w": "es",
+"who": "OSCAR",
+"t": 16.467,
+"d": 0.125
+},
+{
+"w": "donde",
+"who": "OSCAR",
+"t": 16.604,
+"d": 0.225
+},
+{
+"w": "la",
+"who": "OSCAR",
+"t": 16.867,
+"d": 0.087
+},
+{
+"w": "física",
+"who": "OSCAR",
+"t": 16.967,
+"d": 0.512
+},
+{
+"w": "la",
+"who": "OSCAR",
+"t": 17.817,
+"d": 0.1
+},
+{
+"w": "acústica",
+"who": "OSCAR",
+"t": 17.917,
+"d": 0.562
+},
+{
+"w": "y",
+"who": "OSCAR",
+"t": 18.517,
+"d": 0.05
+},
+{
+"w": "la",
+"who": "OSCAR",
+"t": 18.592,
+"d": 0.075
+},
+{
+"w": "biotecnología",
+"who": "OSCAR",
+"t": 18.704,
+"d": 0.775
+},
+{
+"w": "tienen",
+"who": "OSCAR",
+"t": 19.554,
+"d": 0.225
+},
+{
+"w": "que",
+"who": "OSCAR",
+"t": 19.817,
+"d": 0.075
+},
+{
+"w": "salir",
+"who": "OSCAR",
+"t": 19.917,
+"d": 0.275
+},
+{
+"w": "del",
+"who": "OSCAR",
+"t": 20.242,
+"d": 0.1
+},
+{
+"w": "laboratorio",
+"who": "OSCAR",
+"t": 20.342,
+"d": 0.65
+},
+{
+"w": "y",
+"who": "OSCAR",
+"t": 21.042,
+"d": 0.05
+},
+{
+"w": "llegar",
+"who": "OSCAR",
+"t": 21.104,
+"d": 0.3
+},
+{
+"w": "a",
+"who": "OSCAR",
+"t": 21.404,
+"d": 0.05
+},
+{
+"w": "cada",
+"who": "OSCAR",
+"t": 21.504,
+"d": 0.188
+},
+{
+"w": "clínica",
+"who": "OSCAR",
+"t": 21.754,
+"d": 0.438
+},
+{
+"w": "Mientras",
+"who": "OSCAR",
+"t": 23.104,
+"d": 0.463
+},
+{
+"w": "el",
+"who": "OSCAR",
+"t": 23.567,
+"d": 0.075
+},
+{
+"w": "diagnóstico",
+"who": "OSCAR",
+"t": 23.692,
+"d": 0.575
+},
+{
+"w": "llegue",
+"who": "OSCAR",
+"t": 24.292,
+"d": 0.237
+},
+{
+"w": "tarde",
+"who": "OSCAR",
+"t": 24.604,
+"d": 0.312
+},
+{
+"w": "esta",
+"who": "OSCAR",
+"t": 25.117,
+"d": 0.237
+},
+{
+"w": "lucha",
+"who": "OSCAR",
+"t": 25.379,
+"d": 0.275
+},
+{
+"w": "sigue",
+"who": "OSCAR",
+"t": 25.679,
+"d": 0.25
+},
+{
+"w": "abierta",
+"who": "OSCAR",
+"t": 25.929,
+"d": 0.475
+}
+]

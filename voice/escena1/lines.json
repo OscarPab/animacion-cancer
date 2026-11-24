@@ -1,17 +1,17 @@
 {
- "end": 32.395,
+ "end": 32.394,
  "lines": [
   {
    "who": "FERNANDO",
    "text": "El cuerpo humano es una máquina perfecta, gobernada por reglas estrictas. Pero, ¿qué sucede cuando una sola célula decide ignorar las reglas?",
    "t0": 2.2,
-   "t1": 11.26
+   "t1": 11.259
   },
   {
    "who": "SANTIAGO",
    "text": "Eso es el cáncer de mama. No es un invasor externo; es una rebelión interna. Comienza silenciosamente, generalmente en los conductos que transportan la leche, o en los lobulillos. Por una mutación genética, las células desactivan su autodestrucción, y comienzan a multiplicarse sin control.",
-   "t0": 11.96,
-   "t1": 32.395
+   "t0": 11.959,
+   "t1": 32.394
   }
  ]
 }
